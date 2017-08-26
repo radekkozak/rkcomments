@@ -65,7 +65,7 @@ permalink: notepad/:year/:month/:day/:title.html
 excerpt_separator: "<!--more-->"
 
 # Staticman
-staticmanUrl: https://api.staticman.net/v2/entry/radekkozak/radekkozak.github.io/master/comments
+staticmanUrl: https://api.staticman.net/v2/entry/radekkozak/radekkozak.com/master/comments
 
 repository: "radekkozak/radekkozak.com"
 
