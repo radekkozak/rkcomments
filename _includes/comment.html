@@ -1,0 +1,25 @@
+<article>
+  <aside>
+    <img src="https://www.gravatar.com/avatar/{{ include.email }}.png?s=50&d=monsterid&r=g"
+         alt="{{ include.name }}" class="desaturate"
+         srcset="https://www.gravatar.com/avatar/{{ include.email }}.png?s=100&d=monsterid&r=g 2x"/>
+  </aside>
+  <section>
+    {% if include.url != "" %}
+    {% if include.url contains 'http://' or include.url contains 'https://' %}
+    <a rel="nofollow" href="{{ include.url }}" title="{{ include.url }}">
+      <h5>{{ include.name }}</h5>
+    </a>
+    {% else %}
+    <a rel="nofollow" href="{{ include.url | prepend: 'http://' }}"
+       title="{{ include.url | prepend: 'http://' }}">
+      <h5>{{ include.name }}</h5>
+    </a>
+    {% endif %}
+    {% else %}
+    <h5>{{ include.name}}</h5>
+    {% endif %}
+
+    <p>{{ include.message }}</p>
+  </section>
+</article>

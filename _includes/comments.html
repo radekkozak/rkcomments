@@ -1,0 +1,34 @@
+<div class="comment-section">
+
+  <hr>
+
+  <h2>~ On the side ~</h2> <!-- Footnotes / On the margins -->
+
+
+  {% if site.repository and site.staticman.branch %}
+  {% if site.data.comments[page.slug] %}
+
+  <div class="comments">
+
+    {% assign comments = site.data.comments[page.slug] %}
+    {% for comment in comments %}
+
+    {% assign index = forloop.index %}
+    {% assign email = comment[1].email %}
+    {% assign name = comment[1].name %}
+    {% assign url = comment[1].url %}
+    {% assign date = comment[1].date %}
+    {% assign message = comment[1].message %}
+
+    {% include comment.html index=index email=email name=name url=url date=date message=message %}
+    {% endfor %}
+
+  </div>
+
+  {% endif %}
+
+  {% endif %}
+
+  {% include comment-form.html %}
+
+</div>

@@ -42,6 +42,18 @@ contentclass: journal
   </ul>
 </div>
 
-{% include comment-form.html %}
+{% include comments.html %}
 
-
+<script src="{{ site.baseurl }}/assets/js/libs/parsley.min.js"></script>
+<script>
+  $(document).ready(function () {
+    $('#comment-form').on('submit', function (event) {
+      $(this).parsley().validate();
+      if ($(this).parsley().isValid() && $('#humans').val() === '') {
+        // go on with submission
+      } else {
+        event.preventDefault();
+      }
+    });
+  });
+</script>
