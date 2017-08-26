@@ -1,0 +1,52 @@
+---
+layout: default
+contentclass: journal
+---
+
+<h1 style="display: none">notepad</h1>
+{% for post in paginator.posts %}
+<article>
+  <a href="{{ site.baseurl }}{{ post.url }}">
+    <h2 class="notepad">{{ post.title | escape }}
+      {% assign date_format = "%b %-d, %Y" %}
+      <span>{{ post.date | date: date_format  }}</span>
+    </h2>
+  </a>
+  {% if post.content contains site.excerpt_separator %}
+  {{ post.content | split:site.excerpt_separator | first }}...
+  {% else %}
+  {{ post.content | truncatewords: 125 }}
+  {% endif %}
+  <p><a class="read-on" href="{{ site.baseurl }}{{ post.url }}">Read on</a></p>
+</article>
+<hr>
+{% endfor %}
+
+<div class="pager">
+  <ul>
+    <li class="prev">
+      {% if paginator.previous_page %}
+      <a class="smaller" href="{{ paginator.previous_page_path }}"
+         title="Older entries" id="prevLink"><span></span><span>&lt;</span>
+        prev entries</a>
+      {% else %}
+      <a class="disabled smaller" title="There's no older entries"><span></span>
+        <span>&lt;</span>prev entries</a>
+      {% endif %}
+    </li>
+    <li class="next">
+      {% if paginator.next_page %}
+      <a class="smaller" href="{{ paginator.next_page_path }}"
+         title="Newer entries" id="nextLink">next entries<span>&gt;</span>
+        <span></span></a>
+      {% else %}
+      <a class="disabled smaller" title="There's no newer entries">next entries<span>
+            &gt;</span><span></span></a>
+      {% endif %}
+    </li>
+  </ul>
+</div>
+
+<h3 class="aligncenter margintop0"><a href="/notepad/archive/"
+                                      title="Rummage through my notepad">archive</a></h3>
+

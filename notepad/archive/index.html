@@ -1,0 +1,22 @@
+---
+layout: default
+contentclass: journal
+title: Archives by Month
+excerpt: "An archive of posts sorted by date."
+search_omit: true
+# http://reyhan.org/2013/03/jekyll-archive-without-plugins.html
+# http://mikerowecode.com/2010/08/jekyll_archives_grouped_by_year.html
+---
+
+<h1 class="category">:: Rummage through ::<p>my notepad</p></h1>
+<hr class="center width70pc">
+{% for month in archive %}
+<article class="archive">
+  <h2>{{ month.name }}</h2>
+  {% for article in month.articles %}
+  <a href="{{ article.permalink }}">
+    <h3>- {{ article.meta.title}}<span>{{ article.meta.formattedDate}}</span></h3>
+  </a>
+  {% endfor %}
+</article>
+{% endfor %}

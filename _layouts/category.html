@@ -1,0 +1,24 @@
+---
+layout: default
+contentclass: journal
+---
+
+<h1 class="category">:: notes on ::<p>{{ page.category }}</p></h1>
+<hr class="center width70pc">
+
+
+{% for post in site.posts %}
+{% if post.categories %}
+{% for cat in post.categories %}
+{% if cat == page.category %}
+
+<article class="category">
+  <a href="{{ site.baseurl }}{{ post.url }}">
+    <h3>{{ post.title }}</h3>
+  </a>
+</article>
+
+{% endif %}
+{% endfor %}
+{% endif %}
+{% endfor %}

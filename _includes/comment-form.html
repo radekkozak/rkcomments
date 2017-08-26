@@ -1,0 +1,69 @@
+<div class="comment-section">
+
+  <hr>
+
+  <h2>~ On the side ~</h2> <!-- Footnotes / On the margins -->
+  <h2>{{ page.slug }}</h2>
+  <h2>{{ page.url }}</h2>
+  <h2>{{ absolute_url }}</h2>
+  <h2>{{ site.baseurl }}</h2>
+  <h2>{{ site.url }}</h2>
+  <!-- notes, reflections, remarks, afterthoughts -->
+
+  <form id="comment-form"
+        novalidate="true" method="post" data-parsley-validate
+        action="https://api.staticman.net/v2/entry/{{ site.repository }}/{{ site.staticman.branch }}/comments">
+
+    <div class="comment-left">
+
+      <!--<input type="hidden" name="options[origin]" value="{{ page.url | absolute_url }}">-->
+      <input type="hidden" name="options[parent]" value="{{ page.url | absolute_url }}">
+      <input type="hidden" id="comment-post-id" name="options[slug]" value="{{ page.slug }}">
+      <input type="hidden" name="humans" id="humans"
+             placeholder="Human check: leave this empty" autocomplete="off"/>
+
+      <input type="hidden" name="redirect_to" value="{{ basehref }}"/>
+
+      <p class="clearfix">
+        <label>Name</label>
+        <input type="text" name="fields[name]" value="" minlength="2" required
+               placeholder="Name *" data-parsley-minlength="2">
+      </p>
+      <p class="clearfix">
+        <label>Email address</label>
+        <input type="email" value="" name="fields[email]" required
+               placeholder="Email address *">
+      </p>
+      <p class="clearfix">
+        <label>Website</label>
+        <input type="url" name="fields[url]" value=""
+               placeholder="Website (if you have one)">
+      </p>
+    </div>
+
+    <div class="clear"></div>
+    <p class="clearfix">
+      <label>Your remarks</label>
+      <textarea name="fields[message]" value="" placeholder="Your remarks *"
+                required></textarea>
+    </p>
+
+    <input id="submit" type="submit" value="Leave a note">
+
+  </form>
+
+</div>
+
+<script src="{{ site.baseurl }}/assets/js/libs/parsley.min.js"></script>
+<script>
+  $(document).ready(function () {
+    $('#comment-form').on('submit', function (event) {
+      $(this).parsley().validate();
+      if ($(this).parsley().isValid() && $('#humans').val() === '') {
+        // go on with submission
+      } else {
+        event.preventDefault();
+      }
+    });
+  });
+</script>

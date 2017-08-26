@@ -1,0 +1,36 @@
+<head lang="en">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="">
+
+  <meta name="keywords" content="{{ meta.keywords }}">
+  <meta name="author" content="{{ meta.author }}"/>
+  <meta name="copyright"
+        content="Copyright © 2015 by {{ meta.author }}. All Rights Reserved"/>
+
+  <title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif
+    %}</title>
+  <meta name="description"
+        content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
+
+  <link rel="canonical" href="{{ page.url | prepend: site.github.url | replace:'index.html','' | absolute_url }}">
+  <link
+      href='http://fonts.googleapis.com/css?family=Ubuntu:300,400,300italic,400italic&subset=latin,latin-ext'
+      rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/reset.css">
+  <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/main.css">
+  <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/markdown.css">
+  <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/mediaqueries.css">
+  {{ include.styles }}
+
+  <link rel="alternate" type="application/rss+xml" title="Never miss a note."
+        href="/notepad/feed.xml">
+
+  <script src="{{ site.baseurl }}/assets/js/libs/modernizr.min.js"></script>
+  <script src="{{ site.baseurl }}/assets/js/libs/jquery.min.js"></script>
+
+</head>

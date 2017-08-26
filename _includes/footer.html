@@ -1,0 +1,16 @@
+<!-- highlights current menu item  -->
+<script>
+  $(document).ready(function(){
+    var str=location.href.toLowerCase();
+
+    if(str.indexOf('journal') > -1) {
+      $(".varia .menu-item:first-child").addClass("highlight");
+    } else {
+      $(".menu-item a").each(function() {
+        if (str.indexOf(this.href.toLowerCase()) > -1) {
+          $(this).parent().addClass("highlight");
+        }
+      });
+    }
+  })
+</script>
