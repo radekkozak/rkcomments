@@ -39,10 +39,7 @@ comments:
   moderation: false
 
   # Name of the site. Used in notification emails.
-  name: "eduardoboucas.com"
-
-  notifications:
-    enabled: true
+  name: "radekkozak.com"
 
   # (*) REQUIRED
   #
