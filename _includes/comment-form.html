@@ -12,11 +12,17 @@
 
   <form id="comment-form"
         novalidate="true" method="post" data-parsley-validate
-        action="{{ site.staticmanUrl }}">
+        action="https://api.staticman.net/v2/entry/{{ site.repository }}/{{ site.staticman.branch }}/comments">
 
     <div class="comment-left">
 
+      <input type="hidden" name="options[origin]" value="{{ page.url | absolute_url }}">
+      <input type="hidden" name="options[parent]" value="{{ page.url | absolute_url }}">
       <input type="hidden" id="comment-post-id" name="options[slug]" value="{{ page.slug }}">
+      <input type="hidden" name="humans" id="humans"
+             placeholder="Human check: leave this empty" autocomplete="off"/>
+
+      <input type="hidden" name="redirect_to" value="{{ basehref }}"/>
 
       <p class="clearfix">
         <label>Name</label>
