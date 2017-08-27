@@ -1,8 +1,6 @@
-/* ---- STYLING FOR MARKDOWN ARTICLES ---- */
-
 .journal {
   margin: 0 0 2em 0;
-  top: -100px; /** shift journal up in contrast to photo sections */
+  top: -100px;
 }
 
 .journal {
@@ -50,7 +48,7 @@
 }
 
 .journal h1 span, .journal h2 span, .journal h3 span {
-  float:right;
+  float: right;
   font-size: 12px;
   color: #aaaaaa;
   position: relative;
@@ -89,16 +87,8 @@
   line-height: 14pt;
 }
 
-/*.journal h6 {
-  font-size: 15pt;
-  line-height: 17pt;
-  margin-bottom: 12px;
-}*/
-
 .journal h1.category {
   text-align: center;
-/*  margin: 10px 0 10px 0;
-  font-size: 1.3em;*/
 }
 
 .journal article.category a h3 {
@@ -115,7 +105,6 @@
 .journal article.archive {
   width: 70%;
   margin: 0 auto;
-  /*padding: 0 10px;*/
   margin-bottom: 50px;
   margin-top: 25px;
 }
@@ -140,7 +129,6 @@
 
 .journal article.archive a h3 span {
   font-size: 11px;
-  /*float: none;*/
   margin-left: 20px;
 }
 
@@ -164,7 +152,6 @@
   width: 30%;
   margin-bottom: 0;
 }
-
 .journal p,
 .journal blockquote,
 .journal ul,
@@ -203,7 +190,6 @@
   margin-right: 6px;
   font-size: 16px;
 }
-
 .journal a,
 .journal a:visited {
   text-decoration: none;
@@ -217,7 +203,7 @@
 }
 
 .journal a.footnote-backref {
-  position:relative;
+  position: relative;
   top: 1px;
   left: 3px;
 }
@@ -225,7 +211,6 @@
 .journal a.footnote-backref:hover {
   border-bottom: 0;
 }
-
 .journal code,
 .journal pre {
   font-family: "Monaco";
@@ -276,11 +261,9 @@
   margin: 0 0 10px;
 }
 
-.journal ul li:last-of-type,.journal ol li:last-of-type {
+.journal ul li:last-of-type, .journal ol li:last-of-type {
   margin-bottom: 0;
 }
-
-/* ---- STYLING FOR COMMENTS FORM ---- */
 
 *:focus {
   outline: none !important;
@@ -307,11 +290,9 @@
 }
 
 .comment-left p {
-  /*width: 48.5%;*/
   width: 32%;
   float: left;
   margin-right: 2%;
-  /*padding-bottom: 20px;*/
 }
 
 .comment-left p:last-child {
@@ -375,7 +356,6 @@
   font: inherit;
   display: block;
   float: right;
-  /*margin: 8px auto 0;*/
   cursor: pointer;
   padding: 10px 26px;
   background: transparent;
@@ -391,8 +371,6 @@
 .comment-section label {
   display: none;
 }
-
-/** COMMENTS **/
 
 .comments {
   margin-top: 5em;
@@ -435,19 +413,15 @@
   margin: 4px 0 0 0 !important;
   color: #000 !important;
 }
-
-/* COMMENTS FORM ERRORS */
-
 input.parsley-success,
 textarea.parsley-success {
   color: #468847 !important;
   background-color: #DFF0D8 !important;
   border: 1px solid #D6E9C6 !important;
 }
-
 input.parsley-error,
 textarea.parsley-error {
-  color: #c22d2d !important; /* #B94A48 */
+  color: #c22d2d !important;
   background-color: #F2DEDE !important;
   border: 1px dashed #EED3D7 !important;
 }

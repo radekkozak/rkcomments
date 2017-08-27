@@ -1,14 +1,14 @@
-@media only screen and (max-width:1080px) {
+@media only screen and (max-width: 1080px) {
   #gal_nav {
     top: 470px;
   }
 
   #image-container {
-    width:100% !important;
+    width: 100% !important;
   }
 
   #image-container img {
-    height:auto;
+    height: auto;
   }
 }
 
@@ -20,7 +20,6 @@
   #wrapper > header {
     padding-left: 20px;
     max-width: 100%;
-    /*margin-bottom: 10px;*/
     display: inline-block;
     height: 120px;
   }
@@ -29,11 +28,9 @@
     float: right;
   }
 
-  #main>aside {
-
+  #main > aside {
     background-color: #fefefe;
     z-index: 999;
-
     width: 300px;
     overflow-y: scroll;
     -webkit-overflow-scrolling: touch;
@@ -44,13 +41,12 @@
     transition: left 0.3s ease;
   }
 
-  #main>section {
+  #main > section {
     padding: 0 40px;
   }
 
   #nav-open-btn {
     left: 14px;
-    /*top: 43px;*/
     top: 33px;
   }
 
@@ -104,8 +100,6 @@
     margin: 28px 0 45px -66px;
   }
 
-  /** GALLERY **/
-
   #image-container {
     width: 100% !important;
     margin: 0 auto;
@@ -118,7 +112,6 @@
     left: 0;
     right: 0;
   }
-
 
   #gal_nav {
     margin: 0 auto;
@@ -139,7 +132,6 @@
   #description.invisible {
     display: none;
   }
-
 }
 
 @media only screen and (max-width: 680px) {
@@ -150,15 +142,15 @@
 }
 
 @media only screen and (min-width: 1024px) {
-  #wrapper>header {
-    padding-left:50px
+  #wrapper > header {
+    padding-left: 50px
   }
 
-  #wrapper>header>div {
+  #wrapper > header > div {
     padding: 50px 0 0 0;
   }
 
-  #main section>div {
+  #main section > div {
     margin: 0 0 2em;
   }
 }
@@ -170,11 +162,11 @@
 }
 
 @media only screen and (min-width: 768px) {
-  #wrapper>header {
+  #wrapper > header {
     padding-left: 40px;
   }
 
-  #wrapper>header>div {
+  #wrapper > header > div {
     padding: 35px 40px 0 0;
     width: 300px;
     float: right;
@@ -183,14 +175,9 @@
   #nav-open-btn {
     left: 4px;
   }
-
-  /*#main>section {
-    padding: 0 40px;
-  }*/
 }
 
 @media only screen and (min-width: 1024px) {
-
   #nav-open-btn {
     border: 0;
     clip: rect(0 0 0 0);
@@ -204,12 +191,11 @@
 }
 
 @media only screen and (max-width: 767px) {
-
-  #main>section {
+  #main > section {
     padding: 0;
   }
 
-  #main section>div {
+  #main section > div {
     padding: 0 20px;
     margin-bottom: 7em;
   }
@@ -218,12 +204,10 @@
     padding-right: 20px;
   }
 
-
   #wrapper > header > div {
     float: right;
     padding: 0;
     position: relative;
-    /*top: 40px;*/
     top: 30px;
     width: 200px;
   }
@@ -242,11 +226,11 @@
   }
 
   .comments article {
-    margin:0 0 3em
+    margin: 0 0 3em
   }
 
   .comments article:last-child {
-    margin:0 0 2em
+    margin: 0 0 2em
   }
 
   .comments article aside {
@@ -333,5 +317,4 @@
   .journal h1.category {
     font-size: 17pt;
   }
-
 }
