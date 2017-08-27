@@ -25,28 +25,28 @@ contentclass: journal
 <div class="pager">
   <ul>
     <li class="prev">
-      {% if paginator.previous_page %}
-      <a class="smaller" href="{{ paginator.previous_page_path }}"
+      {% if paginator.next_page %}
+      <a class="smaller" href="{{ site.baseurl }}{{ paginator.next_page_path  }}"
          title="Older entries" id="prevLink"><span></span><span>&lt;</span>
-        prev entries</a>
+        older entries</a>
       {% else %}
-      <a class="disabled smaller" title="There's no older entries"><span></span>
-        <span>&lt;</span>prev entries</a>
+      <a class="disabled smaller" title="There's no older entries"><span>&nbsp;</span>
+        <span>&lt;</span>older entries</a>
       {% endif %}
     </li>
     <li class="next">
-      {% if paginator.next_page %}
-      <a class="smaller" href="{{ paginator.next_page_path }}"
-         title="Newer entries" id="nextLink">next entries<span>&gt;</span>
+      {% if paginator.previous_page %}
+      <a class="smaller" href="{{ site.baseurl }}{{ paginator.previous_page_path }}"
+         title="Newer entries" id="nextLink">newer entries<span>&nbsp;</span><span>&gt;</span>
         <span></span></a>
       {% else %}
-      <a class="disabled smaller" title="There's no newer entries">next entries<span>
-            &gt;</span><span></span></a>
+      <a class="disabled smaller" title="There's no newer entries">newer entries<span>
+            &gt;</span><span>&nbsp;</span></a>
       {% endif %}
     </li>
   </ul>
 </div>
 
-<h3 class="aligncenter margintop0"><a href="/notepad/archive/"
+<h3 class="aligncenter margintop0"><a href="{{ site.baseurl }}/notepad/archive/"
                                       title="Rummage through my notepad">archive</a></h3>
 

@@ -1,24 +1,26 @@
 ---
 layout: default
+contentclass: journal
 ---
 
 <style type="text/css" media="screen">
+
   .container {
-    margin: 10px auto;
-    max-width: 600px;
-    text-align: center;
+    height: 500px;
+    display: table;
+    margin: 0 auto;
   }
-  h1 {
-    margin: 30px 0;
-    font-size: 4em;
-    line-height: 1;
-    letter-spacing: -1px;
+
+  .error {
+    display: table-cell;
+    vertical-align: middle;
   }
 </style>
 
 <div class="container">
-  <h1>404</h1>
-
-  <p><strong>Page not found :(</strong></p>
-  <p>The requested page could not be found.</p>
+  <div class="error">
+    <h1>404</h1>
+    <p><strong>Page not found :(</strong></p>
+    <p>Something went wrong but you can still browse through archive.</p>
+  </div>
 </div>

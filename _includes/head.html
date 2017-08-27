@@ -7,6 +7,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
   <meta name="apple-mobile-web-app-title" content="">
 
+  <meta http-equiv="refresh" content="0;url=radekkozak.com"/>
+
   <meta name="keywords" content="{{ meta.keywords }}">
   <meta name="author" content="{{ meta.author }}"/>
   <meta name="copyright"
@@ -28,7 +30,7 @@
   {{ include.styles }}
 
   <link rel="alternate" type="application/rss+xml" title="Never miss a note."
-        href="/notepad/feed.xml">
+        href="{{ site.baseurl | prepend: site.url }}/rss.xml">
 
   <script src="{{ site.baseurl }}/assets/js/libs/modernizr.min.js"></script>
   <script src="{{ site.baseurl }}/assets/js/libs/jquery.min.js"></script>

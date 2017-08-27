@@ -1,22 +1,24 @@
 ---
 layout: default
 contentclass: journal
-title: Archives by Month
-excerpt: "An archive of posts sorted by date."
-search_omit: true
 # http://reyhan.org/2013/03/jekyll-archive-without-plugins.html
 # http://mikerowecode.com/2010/08/jekyll_archives_grouped_by_year.html
 ---
 
 <h1 class="category">:: Rummage through ::<p>my notepad</p></h1>
 <hr class="center width70pc">
-{% for month in archive %}
+
+{% for post in site.posts %}
+{% assign currentdate = post.date | date: "%B %Y" %}
+{% if currentdate != date %}
+{% unless forloop.first %}</article>{% endunless %}
 <article class="archive">
-  <h2>{{ month.name }}</h2>
-  {% for article in month.articles %}
-  <a href="{{ article.permalink }}">
-    <h3>- {{ article.meta.title}}<span>{{ article.meta.formattedDate}}</span></h3>
+  <h2 id="y{{ post.date | date: '%Y'}}">{{ currentdate }}</h2>
+  {% assign date = currentdate %}
+  {% endif %}
+  <a href="{{ site.baseurl }}{{ post.url }}">
+    <h3>- {{ post.title}}<span>{{ post.date | date: "%-d %B %Y" }}</span></h3>
   </a>
-  {% endfor %}
-</article>
+  {% if forloop.last %}
+</article>{% endif %}
 {% endfor %}
