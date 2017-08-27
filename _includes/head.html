@@ -24,7 +24,9 @@
   <link rel="canonical"
         href="{{ page.url | prepend: site.github.url | replace:'index.html','' | absolute_url }}">
 
-  <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/reset.css">
+  <link rel="preload" href="{{ site.baseurl }}/assets/css/reset.css" as="style" onload="this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="{{ site.baseurl }}/assets/css/reset.css"></noscript>
+
   <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/main.css">
   <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/markdown.css">
   <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/mediaqueries.css">
