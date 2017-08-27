@@ -11,15 +11,18 @@
 
   <meta name="keywords" content="{{ meta.keywords }}">
   <meta name="author" content="{{ meta.author }}"/>
-  <meta name="copyright"
-        content="Copyright © 2015 by {{ meta.author }}. All Rights Reserved"/>
+  <meta name="copyright" content="Copyright © 2015 by {{ meta.author }}. All Rights Reserved"/>
+  <meta name="robots" content="noindex,nofollow">
+  <meta name="robots" content="none">
+  <meta name="robots" content="noarchive">
 
-  <title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif
-    %}</title>
+  <title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{%
+    endif%}</title>
   <meta name="description"
         content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
 
-  <link rel="canonical" href="{{ page.url | prepend: site.github.url | replace:'index.html','' | absolute_url }}">
+  <link rel="canonical"
+        href="{{ page.url | prepend: site.github.url | replace:'index.html','' | absolute_url }}">
   <link
       href='http://fonts.googleapis.com/css?family=Ubuntu:300,400,300italic,400italic&subset=latin,latin-ext'
       rel='stylesheet' type='text/css'>
