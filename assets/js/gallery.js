@@ -238,13 +238,13 @@ window.onload = function () {
     maxImage = Number(nrString);
     count = document.getElementById("gal_current");
 
-    if(count !== undefined) {
+    if (count !== undefined && count !== null) {
       count.innerHTML = currentImage;
     }
 
     max = document.getElementById("gal_max");
 
-    if(max !== undefined) {
+    if (max !== undefined && max !== null) {
       max.innerHTML = "/ " + maxImage;
     }
   }

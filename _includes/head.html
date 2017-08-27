@@ -24,13 +24,29 @@
   <link rel="canonical"
         href="{{ page.url | prepend: site.github.url | replace:'index.html','' | absolute_url }}">
 
-  <link rel="preload" href="{{ site.baseurl }}/assets/css/reset.css" as="style" onload="this.rel='stylesheet'">
-  <noscript><link rel="stylesheet" href="{{ site.baseurl }}/assets/css/reset.css"></noscript>
+  <link rel="preload" href="{{ site.baseurl }}/assets/css/reset.css" as="style"
+        onload="this.rel='stylesheet'">
+  <noscript>
+    <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/reset.css">
+  </noscript>
 
-  <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/main.css">
-  <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/markdown.css">
-  <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/mediaqueries.css">
-  {{ include.styles }}
+  <link rel="preload" href="{{ site.baseurl }}/assets/css/main.css" as="style"
+        onload="this.rel='stylesheet'">
+  <noscript>
+    <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/main.css">
+  </noscript>
+
+  <link rel="preload" href="{{ site.baseurl }}/assets/css/markdown.css" as="style"
+        onload="this.rel='stylesheet'">
+  <noscript>
+    <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/markdown.css">
+  </noscript>
+
+  <link rel="preload" href="{{ site.baseurl }}/assets/css/mediaqueries.css" as="style"
+        onload="this.rel='stylesheet'">
+  <noscript>
+    <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/mediaqueries.css">
+  </noscript>
 
   <link rel="alternate" type="application/rss+xml" title="Never miss a note."
         href="{{ site.baseurl | prepend: site.url }}/rss.xml">
