@@ -1,16 +1,33 @@
-<!-- highlights current menu item  -->
 <script>
-  $(document).ready(function(){
-    var str=location.href.toLowerCase();
+  // highlights current menu item
+  $(document).ready(function () {
+    var str = location.href.toLowerCase();
 
-    if(str.indexOf('journal') > -1) {
+    if (str.indexOf('journal') > -1) {
       $(".varia .menu-item:first-child").addClass("highlight");
     } else {
-      $(".menu-item a").each(function() {
+      $(".menu-item a").each(function () {
         if (str.indexOf(this.href.toLowerCase()) > -1) {
           $(this).parent().addClass("highlight");
         }
       });
     }
-  })
+  });
+
+  // load fonts asynchronously
+  WebFontConfig = {
+    google: {
+      families: ['Ubuntu:300,400,300italic,400italic:latin,latin-ext']
+    }, custom: {
+      families: ['BoxedLight'], urls: ['{{ site.baseurl }}/assets/css/main.css']
+    }
+  };
+
+  (function (d) {
+    var wf = d.createElement('script'), s = d.scripts[0];
+    wf.src = 'https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js';
+    wf.async = true;
+    s.parentNode.insertBefore(wf, s);
+  })(document);
+
 </script>
