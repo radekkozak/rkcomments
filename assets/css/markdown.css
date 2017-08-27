@@ -380,6 +380,7 @@
   padding: 10px 26px;
   background: transparent;
   color: #999 !important;
+  width: 10em;
 }
 
 .comment-section input[type=submit]:focus {

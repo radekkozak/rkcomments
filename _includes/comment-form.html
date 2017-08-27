@@ -4,7 +4,7 @@
 
 <form id="comment-form"
       novalidate="true" method="post" data-parsley-validate
-      action="https://api.staticman.net/v2/entry/{{ site.repository }}/{{ site.staticman.branch }}/comments">
+      action="https://api.staticman.net/v2/entrys/{{ site.repository }}/{{ site.staticman.branch }}/comments">
 
   <div class="comment-left">
 
@@ -41,23 +41,17 @@
               required></textarea>
   </p>
 
-  <div class="clear"
-       style="display: inline-flex; float:right; margin-top:8px; vertical-align: middle">
-    <span style="float: left; margin-right: 12em" class="hidden notice"></span>
-    <!-- Loading animation container -->
-    <div id="loading">
-      <!-- We make this div spin -->
-      <div id="spinner">
-        <!-- Mask of the quarter of circle -->
-        <div id="mask">
-          <!-- Inner masked circle -->
-          <div id="maskedCircle"></div>
-        </div>
-      </div>
+  <div class="clear submit-section">
+    <div class="notice hidden"><span class='notice-success'>Thanks for your comment !</span> It's
+      currently pending and will appear on the site shortly.
     </div>
-    <input id="submit" type="submit" value="Leave a note">
-  </div>
 
+    <div class="spinner hidden"></div>
+
+    <div class="submit-wrapper">
+      <input id="submit" type="submit" value="Leave a note">
+    </div>
+  </div>
 
 </form>
 
@@ -65,7 +59,6 @@
 <script>
   function showAlert(message) {
     $('#comment-form .notice').html(message).fadeIn();
-    //$('#comment-form .notice').removeClass('hidden').html(message);
   }
 
   function clear() {
@@ -76,26 +69,29 @@
 
   $(document).ready(function () {
     $('#comment-form').on('submit', function (event) {
+      $('.notice').hide();
       $(this).parsley().validate();
       if ($(this).parsley().isValid() && $('#humans').val() === '') {
         event.preventDefault();
+        $('.spinner').show();
         $('#comment-form').addClass("disabled");
-        $('#submit').val("Loading...").blur();
+        $('#submit').blur();
         $.ajax({
           type: $(this).attr('method'),
           url: $(this).attr('action'),
           data: $(this).serialize(),
           contentType: 'application/x-www-form-urlencoded',
           success: function (data) {
-            $('#submit').val('Leave a note');
+            $('.spinner').hide();
+            //$('#submit').val('Leave a note');
             $('#comment-form').removeClass('disabled');
-            showAlert('<strong>Thanks for your comment !</strong> It is currently pending and will show on the site once approved.');
+            showAlert("<span class='notice-success'>Thanks for your comment !</span><br/>It's currently pending and will appear on the site shortly.");
             clear();
           },
           error: function (err) {
-            $('#submit').val('Leave a note');
+            $('.spinner').hide();
             $('#comment-form').removeClass('disabled');
-            showAlert('<strong>Sorry, there was an error with your submission.</strong> Please make sure all required fields have been completed and try again.');
+            showAlert("<span class='notice-error'>Sorry, there was an error with your submission.</span><br/>Please make sure all required fields have been completed and try again.");
           }
         });
       } else {
