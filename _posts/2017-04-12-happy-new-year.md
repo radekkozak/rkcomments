@@ -2,18 +2,10 @@
 title: Happy New Year
 description: Best wishes in new 2014 !
 date: 2014-01-01 00:58
-keywords: 
-
-categories:
-  - Photography
-  - Travel
-  - Literature
-tags:
-  - John Lennon
-  - Prague
-
+comments: true
+categories: [Photography, Travel, Life]
+tags: [John Lennon, Prague]
 author: Radek Kozak
-draft: false
 ---
 
 Today the wall is covered with graffiti, scribbles and sentences about love 

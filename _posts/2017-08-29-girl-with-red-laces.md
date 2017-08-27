@@ -2,18 +2,10 @@
 title: Girl with red lace 
 description: Girl with red laces in Cracow
 date: 2014-04-01 09:28
-keywords: 
-
-categories:
-  - Photography
-  - Travel
-  - Literature
-tags:
-  - John Lennon
-  - Prague
-
+comments: true
+categories: [Photography, Travel, Life]
+tags: [John Lennon, Prague]
 author: Radek Kozak
-draft: false
 ---
 
 ![Girls with red laces]({{ site.baseurl }}/assets/img/girl-with-red-laces.jpg)

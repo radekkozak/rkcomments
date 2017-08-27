@@ -2,16 +2,10 @@
 title: Something entirely different
 description: Why it is never good to be on time
 date: 2015-06-09 13:13
-keywords: photography, poetry, literature, life, travel
-categories:
-  - Photography
-  - Travel
-  - Literature
-tags:
-  - John Lennon
-  - Prague
+comments: true
+categories: [Photography, Travel, Life]
+tags: [John Lennon, Prague]
 author: Radek Kozak
-draft: false
 ---
 
 ![Something entirely different]({{ site.baseurl }}/assets/img/something-entirely-different.jpg)

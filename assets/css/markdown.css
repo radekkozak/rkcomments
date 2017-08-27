@@ -375,7 +375,7 @@
   font: inherit;
   display: block;
   float: right;
-  margin: 8px auto 0;
+  /*margin: 8px auto 0;*/
   cursor: pointer;
   padding: 10px 26px;
   background: transparent;

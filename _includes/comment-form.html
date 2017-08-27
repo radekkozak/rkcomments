@@ -1,5 +1,7 @@
 <!-- notes, reflections, remarks, afterthoughts -->
 
+{% unless page.comments_locked == true %}
+
 <form id="comment-form"
       novalidate="true" method="post" data-parsley-validate
       action="https://api.staticman.net/v2/entry/{{ site.repository }}/{{ site.staticman.branch }}/comments">
@@ -12,7 +14,8 @@
     <input type="hidden" name="humans" id="humans"
            placeholder="Human check: leave this empty" autocomplete="off"/>
 
-    <input type="hidden" name="redirect_to" value="{{ page.url }}"/>
+    <input type="hidden" name="options[redirect]"
+           value="{{ page.url | absolute_url }}#comment-form"/>
 
     <p class="clearfix">
       <label>Name</label>
@@ -38,6 +41,73 @@
               required></textarea>
   </p>
 
-  <input id="submit" type="submit" value="Leave a note">
+  <div class="clear"
+       style="display: inline-flex; float:right; margin-top:8px; vertical-align: middle">
+    <span style="float: left; margin-right: 12em" class="hidden notice"></span>
+    <!-- Loading animation container -->
+    <div id="loading">
+      <!-- We make this div spin -->
+      <div id="spinner">
+        <!-- Mask of the quarter of circle -->
+        <div id="mask">
+          <!-- Inner masked circle -->
+          <div id="maskedCircle"></div>
+        </div>
+      </div>
+    </div>
+    <input id="submit" type="submit" value="Leave a note">
+  </div>
+
 
 </form>
+
+<script src="{{ site.baseurl }}/assets/js/libs/parsley.min.js"></script>
+<script>
+  function showAlert(message) {
+    $('#comment-form .notice').html(message).fadeIn();
+    //$('#comment-form .notice').removeClass('hidden').html(message);
+  }
+
+  function clear() {
+    $('#comment-form').parsley().reset();
+    $('#comment-form').trigger('reset');
+    $('#comment-form .notice').delay(5000).fadeOut();
+  }
+
+  $(document).ready(function () {
+    $('#comment-form').on('submit', function (event) {
+      $(this).parsley().validate();
+      if ($(this).parsley().isValid() && $('#humans').val() === '') {
+        event.preventDefault();
+        $('#comment-form').addClass("disabled");
+        $('#submit').val("Loading...").blur();
+        $.ajax({
+          type: $(this).attr('method'),
+          url: $(this).attr('action'),
+          data: $(this).serialize(),
+          contentType: 'application/x-www-form-urlencoded',
+          success: function (data) {
+            $('#submit').val('Leave a note');
+            $('#comment-form').removeClass('disabled');
+            showAlert('<strong>Thanks for your comment !</strong> It is currently pending and will show on the site once approved.');
+            clear();
+          },
+          error: function (err) {
+            $('#submit').val('Leave a note');
+            $('#comment-form').removeClass('disabled');
+            showAlert('<strong>Sorry, there was an error with your submission.</strong> Please make sure all required fields have been completed and try again.');
+          }
+        });
+      } else {
+        event.preventDefault();
+      }
+    });
+  });
+
+</script>
+
+
+{% else %}
+<p><em>Comments are closed. If you have a question concerning the content of this page, please feel
+  free to <a href="{{ site.baseurl }}/contact/">contact me</a>.</em></p>
+{% endunless %}

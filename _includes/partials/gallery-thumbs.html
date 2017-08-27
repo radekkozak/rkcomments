@@ -1,0 +1,9 @@
+<div id="thumbsContainer" class="display_none">
+
+  {% assign items = include.items %}
+
+  {% for i in (1..items) %}
+  <img src="img/Radek-Kozak-{{ name }}-{{ i }}.jpg" id={{ i }} class="mini">
+  {% endfor %}
+
+</div>

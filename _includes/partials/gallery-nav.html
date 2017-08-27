@@ -1,0 +1,34 @@
+<div id='gal_nav'>
+  <div id="navigation">
+
+    <div id='gal_count'>
+      <span id='gal_current'></span>
+      <span id="gal_max"></span>
+    </div>
+
+    <div id='gal_prev'>
+      <span>prev</span>
+    </div>
+    <div id='gal_next'>
+      <span>next</span>
+    </div>
+    <div id='gal_all'>
+      <span>all</span>
+    </div>
+    <div id='gal_info'>
+      <span>info</span>
+    </div>
+
+  </div>
+
+  <div id='description'>
+
+    {% assign descriptions = include.descriptions %}
+
+    {% for i in (0..descriptions.size) %}
+    <span id="b{{ i+1 }}">{{ descriptions[i] }}</span>
+    {% endfor %}
+
+  </div>
+
+</div>

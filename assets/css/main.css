@@ -174,7 +174,7 @@ img.desaturate {
 }
 
 .menu-item {
-  padding: 0 0 6px 0px;
+  padding: 0 0 7px 0px;
 }
 
 .menu-item a {
@@ -198,7 +198,7 @@ img.desaturate {
 
 .poetry {
   position: relative;
-  padding: 80px 0px 0px 0px;
+  padding: 66px 0px 0px 0px;
 }
 
 .varia {
@@ -234,8 +234,9 @@ img.desaturate {
 .menu li.highlight:before {
   color: #f03838;
   font-weight: bold;
-  margin-left: -20px;
-  content: '\b7\a0\a0\a0'; /* \b7 is a middot, \a0 is a space */
+  margin-left: -14px;
+  margin-right: 10px;
+  content: '\2022'; /* \b7 is a middot, \a0 is a space */
 }
 
 #notepad + a {
@@ -331,7 +332,7 @@ img.desaturate {
 }
 
 #gal_nav {
-  padding: 10px 0 0 5px;
+  padding: 16px 0 0 5px;
   position: relative;
   top: 500px;
   display: table;
@@ -345,12 +346,12 @@ img.desaturate {
 
 #gal_prev, #gal_next, #gal_all, #gal_info {
   float: left;
-  padding: 0px 5px 0px 5px;
+  padding: 0 5px 0 5px;
 }
 
 #gal_count {
   float: left;
-  padding: 0px 5px 0px 0px;
+  padding: 0 5px 0 0;
 }
 
 #gal_current {
@@ -383,7 +384,7 @@ img.desaturate {
 
 #description {
   float: left;
-  margin-top: -2px;
+  /*margin-top: -2px;*/
   color: #666;
   display: table-cell;
   width: calc(100% - 200px);
@@ -441,12 +442,18 @@ img.desaturate {
 
 /* Loading animation container */
 #loading {
-  position: absolute;
-  top: 250px;
-  left: 50%;
+  position: relative;
+  /*left: 50%;
+  top: 50%;
+
+  margin-top: -14px;
+  margin-left: -14px;*/
+
+  /*position: relative;*/
   width: 28px;
   height: 28px;
-  margin: -14px 0 0 -14px;
+  /*margin: 0 auto;*/
+  /*margin: -14px 0 0 -14px;*/
 }
 
 /* Spin track (outer circle) */
@@ -477,9 +484,9 @@ img.desaturate {
 
 /* Spinner */
 #spinner {
-  position: relative;
+  /*position: relative;
   left: -80px;
-  top: -30px;
+  top: -30px;*/
   width: 26px;
   height: 26px;
   -webkit-animation: spin 1s infinite linear;
@@ -703,4 +710,18 @@ sup::after {
 
 a.footnote:hover, a.reversefootnote:hover {
   border-bottom: none !important;
+}
+
+.hidden {
+  display: none;
+  /*visibility: hidden;*/
+}
+
+.disabled {
+  pointer-events: none;
+  box-shadow: none;
+  cursor: not-allowed;
+  outline-style: none;
+  opacity: 0.65;
+  border: none !important;
 }

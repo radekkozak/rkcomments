@@ -2,19 +2,10 @@
 title: If they don't let us dream
 description: Today the wall is covered with graffiti, scribbles and sentences about love
 date: 2015-06-08 22:43
-keywords: photography, life, travel
-
-categories:
-  - Photography
-  - Travel
-  - Poetry
-  - Review
-  - Literature
-tags:
-  - John Lennon
-
+comments: true
+categories: [Photography, Travel, Life]
+tags: [John Lennon, Prague]
 author: Radek Kozak
-draft: false
 ---
  
 ![If they don't let us dream]({{ site.baseurl }}/assets/img/if-they-dont-let-us-dream.jpg)

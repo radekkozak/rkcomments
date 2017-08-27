@@ -2,18 +2,10 @@
 title: Today is my birthday 
 description: Today is my birthday.
 date: 2015-06-18 14:39
-keywords: 
-
-categories:
-  - Photography
-  - Travel
-  - Life
-tags:
-  - John Lennon
-  - Prague
-
+comments: true
+categories: [Photography, Travel, Life]
+tags: [John Lennon, Prague]
 author: Radek Kozak
-draft: false
 ---
 
 ![I want to go to Prague for my birthday !]({{ site.baseurl }}/assets/img/birthday.jpg)

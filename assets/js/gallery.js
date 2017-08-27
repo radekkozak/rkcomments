@@ -144,6 +144,8 @@ var imgPreview = {
       var bigImageId = "a" + this.id;
       var descriptionId = "b" + this.id;
 
+      $("#gal_current").html(this.id);
+
       var bigImage = document.getElementById(bigImageId);
       var description = document.getElementById(descriptionId);
 
