@@ -35,6 +35,7 @@ var imageObject = {
 
 
 $(function () {
+  imageObject.clickSwap($('#imageContainer')); // clicking on IMAGE
   imageObject.clickSwap($('#gal_next')); // clicking on NEXT button
 });
 

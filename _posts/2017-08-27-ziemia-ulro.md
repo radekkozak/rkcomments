@@ -4,7 +4,7 @@ description: Ziemia Ulro by Czesław Miłosz
 date: 2017-08-27 17:57
 comments: true
 comments_locked: false
-categories: [Literature, Poetry, Life in General]
+categories: [Literature, Poetry]
 tags: [Czesław Miłosz, Ziemia Ulro, William Blake]
 author: Radek Kozak
 ---

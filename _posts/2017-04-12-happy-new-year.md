@@ -3,7 +3,7 @@ title: Happy New Year
 description: Best wishes in new 2014 !
 date: 2014-01-01 00:58
 comments: true
-categories: [Photography, Travel, Life]
+categories: [Photography, Travel]
 tags: [John Lennon, Prague]
 author: Radek Kozak
 ---

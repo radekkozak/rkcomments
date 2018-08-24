@@ -1,3 +1,7 @@
+:root {
+  font-size: 16px !important;
+}
+
 @font-face {
   font-family: 'BoxedLight';
   src: url('../fonts/BoxedLight.eot');
@@ -13,6 +17,14 @@
   padding: 0;
 }
 
+::selection {
+  background: #FCECB6;
+}
+
+::-moz-selection {
+  background: #FCECB6;
+}
+
 body, html {
   background-color: #fefefe;
   height: 100% !important;
@@ -22,17 +34,14 @@ body, html {
 }
 
 body {
-  font-family: BoxedLight;
-  font-size: 13px;
+  font-family: BoxedLight, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 0.875rem;
+  line-height: 1rem;
   color: #333;
   text-rendering: optimizeLegibility;
-  text-rendering: geometricPrecision;
-  font-smooth: always;
-  font-smoothing: antialiased;
-  -moz-font-smoothing: antialiased;
   -webkit-font-smoothing: antialiased;
-  -webkit-font-smoothing: subpixel-antialiased;
   -moz-osx-font-smoothing: grayscale;
+  -moz-font-feature-settings: "liga" on;
 }
 
 textarea, input:not([type=checkbox]):not([type=radio]) {
@@ -60,19 +69,21 @@ a {
   width: 100%;
   height: 100%;
   min-height: 100%;
+  padding: 1.5rem 1.5rem 0 1.5rem;
 }
 
 header {
-  width: 100%;
-  max-width: 300px;
-  height: 140px;
+  margin-bottom: 2.25rem;
   display: table;
 }
 
 header > div {
   display: table-cell;
-  padding: 45px 0 0 45px;
-  width: 300px;
+  width: 100%;
+}
+
+header h1 {
+  margin: 0;
 }
 
 header > h3 {
@@ -95,16 +106,17 @@ header > h3 a:hover {
 }
 
 h1 {
-  font-size: 2em;
+  font-size: 1.875rem; /*2rem;*/
+  line-height: 2rem; /* 2.125rem */
   color: #000;
-  font-weight: bold;
+  /*font-weight: bold;*/
 }
 
 h2.site-description {
   max-width: 170px;
   margin: 0 0 20px 0;
-  font-size: 0.8125rem;
-  line-height: 1.7;
+  font-size: 0.95rem;
+  /*line-height: 1.7;*/
   font-weight: normal;
   text-indent: 0.15em;
   letter-spacing: 0.125em;
@@ -130,11 +142,15 @@ img.desaturate {
   width: 100%;
   height: 100%;
   display: table;
+  /*margin-bottom: 2.5rem;*/
 }
 
 #main aside {
-  width: 300px;
-  padding: 5px 50px 70px 90px;
+  min-width: 10.625rem;
+  width: 13.25rem;
+  /*width: 212px;*/
+  /*width: calc(100% - 700px);*/
+  padding: 0.3125rem 0rem 0 2.5rem;
   display: table-cell;
   vertical-align: top;
   overflow: scroll;
@@ -143,10 +159,11 @@ img.desaturate {
 }
 
 #main section {
-  width: calc(100% - 300px);
+  width: calc(100% - 12.5rem); /* 310px */
   height: 100%;
   display: table-cell;
-  padding: 0 40px 0 40px;
+  padding-left: 3.25rem;
+  /*padding: 0 40px 0 40px;*/
 }
 
 #main section > div {
@@ -154,6 +171,7 @@ img.desaturate {
   height: 100%;
   max-width: 700px;
   position: relative;
+  /*margin-bottom: 2.5rem !important;*/
 }
 
 .menu-title {
@@ -164,7 +182,7 @@ img.desaturate {
 }
 
 .menu-item {
-  padding: 0 0 7px 0px;
+  padding: 0 0 8px 0px;
 }
 
 .menu-item a {
@@ -186,7 +204,7 @@ img.desaturate {
 
 .poetry {
   position: relative;
-  padding: 66px 0px 0px 0px;
+  padding: 40px 0px 0px 0px;
 }
 
 .varia {
@@ -214,9 +232,13 @@ img.desaturate {
   content: '\2022';
 }
 
+.menu li.highlight > a#notepad {
+  margin-left: -6px;
+}
+
 #notepad + a {
   color: #8c8c8c;
-  font-size: 1em;
+  font-size: 1rem;
   float: right;
 }
 
@@ -244,13 +266,16 @@ img.desaturate {
 
 #image-container {
   float: left;
-  height: 500px;
+  /*height: 500px;*/
+}
+
+#image-container.home img {
+  position: relative;
 }
 
 #image-container img {
   display: block;
   max-height: 500px;
-  height: 500px;
   opacity: 0;
   position: absolute;
   top: 0;
@@ -289,6 +314,10 @@ img.desaturate {
   position: relative;
   top: 500px;
   display: table;
+}
+
+.home #gal_nav {
+  top: 0;
 }
 
 #gal_nav #navigation {
@@ -420,25 +449,25 @@ img.desaturate {
 
 .nav-btn {
   display: block;
-  width: 2.625em;
-  height: 2.25em;
+  width: 2.25rem; /* 2.635 */
+  height: 2rem;
   padding: 0;
   border: 0;
   outline: none;
   background: #fefefe url("../graphics/nav-icon.svg") left center no-repeat;
-  background-size: 1.875em 1.5em;
+  background-size: 2.25rem 1.5rem;
   overflow: hidden;
   white-space: nowrap;
   text-indent: 100%;
-  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
-  opacity: 0.7;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
+  opacity: 0.8;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
 #nav-open-btn {
   position: relative;
-  top: 50px;
-  left: 20px;
+  /*top: 30px;
+  left: 20px;*/
   float: left;
 }
 
@@ -463,45 +492,43 @@ img.desaturate {
 }
 
 .journal .pager h5 {
-  font-size: 0.9em;
-  color: #cdcdcd;
+  font-size: 0.825rem;
+  color: #b3b3b3; /*#cdcdcd;*/
   float: right;
-  margin: 2em 2em 4em 0;
+  margin: 2em 2em 6em 0;
 }
 
 .journal .pager h5 a {
-  color: #cdcdcd;
+  color: #b3b3b3;
 }
 
 .journal .pager h5 a:hover {
-  color: #aaa;
+  color: #666; /*#aaa;*/
   border: 0;
 }
 
 .journal .pager ul li {
-  display: inline-block;
-  vertical-align: middle;
-  margin: 0 10px;
-  height: 56px;
-  line-height: 56px;
+  display: table-cell;
   width: 50%;
+  height: 3.75rem;
+}
+
+.journal .pager li.prev p, .journal .pager li.next p {
+  margin: 0rem;
 }
 
 .journal .pager li.prev {
-  display: table-cell;
   text-align: right;
-  padding-right: 0.5em;
+  padding-right: 1.5rem;
 }
 
 .journal .pager li.next {
-  display: table-cell;
   text-align: left;
-  padding-left: 0.5em;
+  padding-left: 1.5rem;
 }
 
 .journal .pager ul li a {
-  display: block;
-  color: #aaa;
+  color: #6b6b6b; /*#aaa;*/
   padding: 7px 10px 5px 10px;
   text-transform: uppercase;
   letter-spacing: 0.25em;
@@ -510,14 +537,11 @@ img.desaturate {
 .journal .pager ul li a.disabled {
   pointer-events: none;
   cursor: default;
+  color: #aaa;
 }
 
 .journal .pager ul li a.disabled:hover {
   color: #aaa;
-}
-
-.journal .pager ul li a span {
-  letter-spacing: 0.05em;
 }
 
 .journal .pager ul li a:hover {
@@ -525,35 +549,17 @@ img.desaturate {
   color: #c22d2d;
 }
 
-.journal .pager li.prev a span:last-child {
-  margin-right: 0.5em;
+.journal .pager li.prev a p:last-child, .journal .pager li.next a p:last-child {
+  font-size: 0.6875rem;
+  letter-spacing: 0.1em;
 }
 
-.journal .pager li.next a span:first-child {
+.journal .pager li.next a p:last-child {
+  margin-left: 0.15rem;
 }
 
-.journal .pager li.prev a span:first-child {
-  font-size: 0.8em;
-  position: relative;
-  top: 20px;
-  right: -118px;
-}
-
-.journal .pager ul li.prev a:hover > span:first-child {
-  display: inline-block;
-  color: #aaa;
-}
-
-.journal .pager li.next a span:last-child {
-  font-size: 0.8em;
-  position: relative;
-  top: 20px;
-  left: -120px;
-}
-
-.journal .pager ul li.next a:hover > span:last-child {
-  display: inline-block;
-  color: #aaa;
+.journal .pager li.prev a p:last-child {
+  margin-right: 0.25rem;
 }
 
 .journal .newspaper-layout {
@@ -580,8 +586,8 @@ img.desaturate {
   margin: 0 auto !important;
 }
 
-.width70pc {
-  width: 70%;
+.width80pc {
+  width: 80%;
 }
 
 .grey {
@@ -598,17 +604,21 @@ img.desaturate {
 
 sup {
   vertical-align: super;
-  padding: 0 0 0 0.2em;
+  padding: 0 0.15rem 0 0.25rem;
+  font-size: 1.025rem;
+  top: 0.125rem;
 }
 
 sup::before {
   content: "[";
   color: #c22d2d;
+  margin-right: 0.15rem;
 }
 
 sup::after {
   content: "]";
   color: #c22d2d;
+  margin-left: 0.1rem;
 }
 
 a.footnote:hover, a.reversefootnote:hover {

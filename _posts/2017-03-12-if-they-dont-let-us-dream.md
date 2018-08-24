@@ -3,7 +3,7 @@ title: If they don't let us dream
 description: Today the wall is covered with graffiti, scribbles and sentences about love
 date: 2015-06-08 22:43
 comments: true
-categories: [Photography, Travel, Life]
+categories: [Photography, Travel]
 tags: [John Lennon, Prague]
 author: Radek Kozak
 ---

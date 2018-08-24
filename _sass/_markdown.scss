@@ -1,14 +1,15 @@
 .journal {
   margin: 0 0 2em 0;
-  top: -100px;
+  top: -4.25rem;
+  font-family: "Roboto";
+  font-weight: 300;
+  font-size: 1rem;
+  line-height: 1.6rem;
 }
 
-.journal {
-  font-family: "Ubuntu";
-  font-weight: 300;
-  font-size: 0.8125rem;
-  line-height: 1.3rem;
-  word-spacing: 0.05em;
+.journal article {
+  letter-spacing: 0.025em;
+  word-spacing: 0.025em;
 }
 
 .journal em {
@@ -37,10 +38,12 @@
 }
 
 .journal h1, .journal h2, .journal h3, .journal h4, .journal h5, .journal h6 {
-  font-family: "BoxedLight";
-  font-weight: normal;
+  font-family: "Roboto Mono";
+  font-weight: 300;
   margin: 50px 0 15px 0;
   color: #000000;
+  word-spacing: -0.2rem;
+  clear: both;
 }
 
 .journal h1, .journal h2, .journal h3 {
@@ -49,36 +52,38 @@
 
 .journal h1 span, .journal h2 span, .journal h3 span {
   float: right;
-  font-size: 12px;
-  color: #aaaaaa;
+  font-size: 0.8125rem;
+  color: #6b6b6b;
   position: relative;
   padding-right: 5px;
 }
 
 .journal h1 span, .journal h2 span {
-  font-size: 12px;
-  top: -5px;
+  font-size: 0.75rem;
+  top: -6px;
 }
 
 .journal h2 {
-  font-size: 16pt;
-  line-height: 16pt;
+  font-size: 1.4rem;
+  line-height: 1.6rem;
+  /*font-size: 1rem;
+  line-height: 1.125rem;*/
 }
 
 .journal h2.notepad, .journal h1 {
   margin: 0 0 20px 0;
-  font-size: 20pt;
-  line-height: 20pt;
+  font-size: 1.8rem;
+  line-height: 2rem;
 }
 
 .journal h3 {
-  font-size: 13pt;
-  line-height: 13pt;
+  font-size: 1.25rem;
+  line-height: 1.45rem;
 }
 
 .journal h4 {
-  font-size: 13pt;
-  line-height: 15pt;
+  font-size: 1.25rem;
+  line-height: 1.45rem;
 }
 
 .journal h5 {
@@ -89,11 +94,18 @@
 
 .journal h1.category {
   text-align: center;
+  font-size: 1rem;
+  letter-spacing: 0.125em;
+}
+
+.journal h1.category p {
+  font-size: 1.875rem;
+  margin: 1rem 0;
 }
 
 .journal article.category a h3 {
-  font-size: 1.3em;
-  margin: 20px 0 0 0;
+  font-size: 1rem;
+  margin: 1.25rem 0 0 0;
   text-transform: none;
   text-align: center;
 }
@@ -105,19 +117,21 @@
 .journal article.archive {
   width: 70%;
   margin: 0 auto;
-  margin-bottom: 50px;
-  margin-top: 25px;
+  /*margin-bottom: 50px;
+  margin-top: 25px;*/
 }
 
 .journal article.archive h2 {
   color: #aaaaaa;
-  font-size: 1.3em;
+  font-size: 0.875rem;
   text-align: left;
-  margin: 0px 0 15px;
+  /*margin: 0px 0 15px;*/
+  margin-top: 2rem;
+  /*margin-bottom: 1rem;*/
 }
 
 .journal article.archive a h3 {
-  font-size: 1.1em;
+  font-size: 1rem;
   margin: 10px 0 0 0;
   text-transform: none;
   padding-left: 20px;
@@ -133,14 +147,14 @@
 }
 
 .journal hr {
-  margin: 2em 0 3em 0;
-  padding-bottom: 1em;
+  margin: 3em 0 3em 0;
+  border-top: 1px dotted #cccccc;
 }
 
 .journal article > p:last-child {
   text-align: right;
   padding-top: 1em;
-  padding-right: 2em;
+  padding-right: 4em;
 }
 
 .journal article > p:last-child a:hover {
@@ -148,10 +162,13 @@
   color: #f03838;
 }
 
-.journal hr.footnotes-sep {
-  width: 30%;
-  margin-bottom: 0;
+.journal .footnotes {
+  margin: 4rem 0;
+  border-top: 1px solid #cccccc;
+  font-size: 1rem;
+  line-height: 1.125rem;
 }
+
 .journal p,
 .journal blockquote,
 .journal ul,
@@ -160,29 +177,48 @@
 .journal li,
 .journal table,
 .journal pre {
-  margin: 15px 0;
+  margin: 2rem 0;
+}
+
+.journal p {
+  clear: both;
 }
 
 .journal blockquote {
-  margin: 3em 2em 3em 2em;
-  padding-left: 1em;
-  border-left: 1px dashed #ddd;
+  /*margin: 3rem 2rem 3rem 10rem;*/
+  padding-left: 2rem;
+  padding-right: 2rem;
+  /*border-left: 1px dashed #ddd;*/
+  border-left: 1px solid #c22d2d;
   font-style: italic;
-  color: #8c8c8c;
+  color: #444; /*#8c8c8c;*/
   text-align: justify;
+  /*text-align: left;*/
+
+  width: 70%;
+  float: right;
+  position: relative;
+  clear: both;
+  margin: 2rem 2rem 4rem 16rem;
 }
 
 .journal blockquote blockquote {
   border: none;
+  margin: 1rem 0 0.6rem 0;
+}
+
+.journal blockquote p {
+  margin: 0.65rem 0;
 }
 
 .journal .quote-author {
-  margin: 1em 3em 3em 0;
+  /*margin: 1em 3em 3em 0;*/
+  margin: 2rem 3rem 0.6rem 0;
   float: right;
   text-align: right;
   font-style: normal;
   width: 100%;
-  color: #8c8c8c;
+  color: #333; /*#8c8c8c;*/
 }
 
 .journal .quote-author:before {
@@ -195,6 +231,10 @@
   text-decoration: none;
   color: #c22d2d;
   border: none;
+}
+
+.journal a.read-on {
+  font-size: 0.875rem;
 }
 
 .journal a:hover {
@@ -240,9 +280,9 @@
 }
 
 .journal ul, .journal ol {
-  margin: 2em 0 2em 4em;
+  margin: 2rem 1.5rem 2rem 4em;
   padding: 0;
-  line-height: 1.45em;
+  line-height: 1.45rem;
 }
 
 .journal ul {
@@ -274,9 +314,13 @@
   margin-top: 3em;
 }
 
+.comment-section p {
+  clear: none;
+}
+
 .comment-section h2 {
   text-align: center;
-  color: #a7a7a7;
+  color: #333;
   margin-bottom: 2em;
 }
 
@@ -293,6 +337,8 @@
   width: 32%;
   float: left;
   margin-right: 2%;
+  margin-bottom: 0;
+  margin-top: 0;
 }
 
 .comment-left p:last-child {

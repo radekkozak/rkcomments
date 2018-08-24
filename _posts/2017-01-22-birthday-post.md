@@ -3,7 +3,7 @@ title: Today is my birthday
 description: Today is my birthday.
 date: 2015-06-18 14:39
 comments: true
-categories: [Photography, Travel, Life]
+categories: [Photography, Travel]
 tags: [John Lennon, Prague]
 author: Radek Kozak
 ---

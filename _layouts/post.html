@@ -20,23 +20,22 @@ contentclass: journal
   <ul>
     <li class="prev">
       {% if page.previous.url %}
-      <a href="{{ site.baseurl }}{{ page.previous.url }}"
-         title="{{ previous.title }}"
-         id="prevLink"><span>{{ page.previous.title}}</span><span>&lt;</span>prev entry</a>
+      <a href="{{ site.baseurl }}{{ page.previous.url }}" title="{{ previous.title }}"
+         id="prevLink"><p>prev entry</p>
+        <p>{{ page.previous.title}}</p></a>
       {% else %}
-      <a title="There's no older entry" class="disabled"><span></span>
-        <span>&lt;</span>prev entry</a>
+      <a title="There's no older entry" class="disabled"><p>prev entry</p>
+        <p></p></a>
       {% endif %}
     </li>
     <li class="next">
       {% if page.next.url %}
-      <a href="{{ site.baseurl }}{{ page.next.url}}"
-         title="{{page.next.title }}"
-         id="nextLink">next entry
-        <span>&gt;</span><span>{{ page.next.title }}</span></a>
+      <a href="{{ site.baseurl }}{{ page.next.url}}" title="{{page.next.title }}"
+         id="nextLink"><p>next entry</p>
+        <p>{{ page.next.title }}</p></a>
       {% else %}
-      <a title="There's no newer entry" class="disabled">
-        next entry<span>&gt;</span><span></span></a>
+      <a title="There's no newer entry" class="disabled"><p>next entry</p>
+        <p></p></a>
       {% endif %}
     </li>
   </ul>

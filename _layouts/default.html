@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ page.lang | default: site.lang | default: " en" }}">
+<html lang="{{ page.lang | default: site.lang | default: 'en' }}">
 
 {% include head.html %}
 
@@ -13,7 +13,7 @@
         <a href="{{ site.baseurl }}/" title="Radek Kozak">radek kozak</a>
       </h1>
 
-      <h2 class="site-description">photographer / poet</h2>
+      <!--<h2 class="site-description">photographer / poet</h2>-->
       <!--<h2 class="site-description">photographer &#183; poet</h2>-->
     </div>
     {{ headerblock }}
@@ -86,7 +86,7 @@
       <a href="#"></a>
     </div>
 
-  </div><!-- #main -->
+  </div>
 </div>
 
 {% include footer.html %}

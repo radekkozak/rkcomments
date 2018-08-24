@@ -51,7 +51,8 @@ DEPENDENCIES
   jekyll (= 3.5.2)
   jekyll-feed (~> 0.6)
   jekyll-paginate
+  jekyll-sass-converter
   tzinfo-data
 
 BUNDLED WITH
-   1.15.4
+   1.16.2

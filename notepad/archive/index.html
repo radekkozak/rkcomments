@@ -6,7 +6,7 @@ contentclass: journal
 ---
 
 <h1 class="category">:: Rummage through ::<p>my notepad</p></h1>
-<hr class="center width70pc">
+<hr class="center width80pc">
 
 {% for post in site.posts %}
 {% assign currentdate = post.date | date: "%B %Y" %}
@@ -17,7 +17,7 @@ contentclass: journal
   {% assign date = currentdate %}
   {% endif %}
   <a href="{{ site.baseurl }}{{ post.url }}">
-    <h3>- {{ post.title}}<span>{{ post.date | date: "%-d %B %Y" }}</span></h3>
+    <h3>- {{ post.title}}<span>{{ post.date | date: "%-d %B" }}</span></h3><!--  %Y -->
   </a>
   {% if forloop.last %}
 </article>{% endif %}
