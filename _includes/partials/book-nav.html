@@ -1,0 +1,41 @@
+<div id='gal_nav'>
+  <div id="navigation">
+
+    <div id='gal_count'>
+      <span id='gal_current'></span>
+      <span id="gal_max"></span>
+    </div>
+
+    <div id='gal_prev'>
+      <span>prev</span>
+    </div>
+    <div id='gal_next'>
+      <span>next</span>
+    </div>
+    <div id='gal_all'>
+      <span>all</span>
+    </div>
+
+  </div>
+
+  <div id="book-description">
+    {% assign book = include.book_info %}
+    <p>
+      <strong>{{ book.name }}</strong>
+      {% if book.instock == false %}<span>[ out of print ]</span>{% endif %}
+    </p>
+    <p>{{ book.description }}</p>
+    <p id="book-info"><strong>book info</strong></p>
+    <p>{{ book.edition }}</p>
+    <p>pages: {{ book.pages }}</p>
+    <p>photos: {{ book.photos }}</p>
+    <p>cover: {{ book.cover }}</p>
+    <p>dimensions: {{ book.dimensions }}</p>
+    <p>language: {{ book.lang }}</p>
+    <p>book design: {{ book.design }}</p>
+    <p>editorial: {{ book.editorial }}</p>
+    <p>publisher: {{ book.publisher }}</p>
+    <p>ISBN: {{ book.isbn }}</p>
+  </div>
+
+</div>

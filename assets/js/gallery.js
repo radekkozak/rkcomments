@@ -246,7 +246,7 @@ window.onload = function () {
     max = document.getElementById("gal_max");
 
     if (max !== undefined && max !== null) {
-      max.innerHTML = "/ " + maxImage;
+      max.innerHTML = " / " + maxImage;
     }
   }
 };

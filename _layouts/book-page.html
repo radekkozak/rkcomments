@@ -6,6 +6,7 @@ contentclass: gallery
 {% assign items = page.items %}
 {% assign name = page.gallery %}
 {% assign descriptions = page.descriptions %}
+{% assign book_info = page.book_info %}
 
 <div id="image-container">
 
@@ -15,16 +16,9 @@ contentclass: gallery
   <img src="img/Radek-Kozak-{{ name }}-{{ i }}.jpg" id=a{{ i }}>
   {% endfor %}
 
-  {% include partials/gallery-nav.html descriptions=descriptions items=items %}
+  {% include partials/book-nav.html descriptions=descriptions items=items book_info=book_info %}
 
 </div>
-
-<!--<a class="left carousel-control" data-slide="prev">
-  <span class="glyphicon glyphicon-chevron-left"></span>
-</a>
-<a class="right carousel-control" data-slide="next">
-  <span class="glyphicon glyphicon-chevron-right"></span>
-</a>-->
 
 {% include partials/gallery-thumbs.html items=items %}
 

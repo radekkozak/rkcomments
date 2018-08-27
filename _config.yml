@@ -11,7 +11,7 @@ github_username:  radekkozak
 
 timezone: Europe/Warsaw
 
-keep_files: ["photography"]
+keep_files: ["photography", "books"]
 include: [.htaccess]
 
 # repository: localhost:4000
