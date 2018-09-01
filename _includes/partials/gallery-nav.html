@@ -21,12 +21,15 @@
 
   </div>
 
-  <div id='description'>
+  <div id='description' class="invisible">
 
     {% assign descriptions = include.descriptions %}
 
-    {% for i in (0..descriptions.size) %}
-    <span id="b{{ i+1 }}">{{ descriptions[i] }}</span>
+
+    {% assign size = descriptions.size | minus:1 %}
+
+    {% for i in (0..size) %}
+    <span id="b{{ forloop.index }}">{{ descriptions[i] }}</span>
     {% endfor %}
 
   </div>

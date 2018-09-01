@@ -187,6 +187,7 @@ img.desaturate {
 }
 
 .menu-item a {
+  text-transform: uppercase;
 }
 
 .collections {
@@ -242,6 +243,7 @@ img.desaturate {
   font-size: 0.8125rem;
   float: right;
   margin-top: -1px;
+  text-transform: lowercase;
 }
 
 #notepad + a:hover {
@@ -269,7 +271,7 @@ img.desaturate {
 #image-container {
   float: left;
   /*max-height: 500px;*/
-  width: 100% !important;
+ /* width: 100% !important;*/
 }
 
 #image-container.home img {
@@ -320,6 +322,7 @@ img.desaturate {
   position: relative;
   /*top: 500px;*/
   display: table;
+  /*width: 100%;*/
 }
 
 .home #gal_nav {
@@ -330,7 +333,7 @@ img.desaturate {
   display: table-cell;
   width: 200px;
   float: left;
-  margin-bottom: 3rem;
+  margin-bottom: 2.5rem;
 }
 
 #gal_prev, #gal_next, #gal_all, #gal_info {
@@ -356,8 +359,8 @@ img.desaturate {
   moz-transition: opacity 0.3s;
   ms-transition: opacity 0.3s;
   o-transition: opacity 0.3s;
-  display: table-cell;
-  width: calc(100% - 200px);
+  /*display: table-cell;
+  width: calc(100% - 200px);*/
 }
 
 #description.invisible {
@@ -367,8 +370,8 @@ img.desaturate {
   moz-transition: opacity 0.3s;
   ms-transition: opacity 0.3s;
   o-transition: opacity 0.3s;
-  display: table-cell;
-  width: calc(100% - 200px);
+  /*display: table-cell;
+  width: calc(100% - 200px);*/
 }
 
 #description {
@@ -381,7 +384,7 @@ img.desaturate {
 #description span {
   text-align: justify;
   text-justify: inter-word;
-  font-size: 0.8em;
+  font-size: 0.75rem; /* 0.875rem; */
   display: none;
 }
 

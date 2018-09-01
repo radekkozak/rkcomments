@@ -141,21 +141,32 @@
 
   #gal_nav {
     margin: 0 auto;
+    text-align: center;
+  }
+
+  .home #gal_nav, #book-description {
+    text-align: left;
   }
 
   #gal_info {
-    display: none;
+    /*display: none;*/
   }
 
   #gal_nav #navigation {
-    width: 100%;
+    width: initial;
+    display: inline-block;
+    margin: 0 auto 2.5rem auto;
+    float: none;
   }
 
-  #description {
-    display: none;
+  #description, #description.visible  {
+    width: 100%;
+    margin-bottom: 3.5rem;
+    margin-top: -1.5rem;
   }
 
   #description.invisible {
+    width: 100%;
     display: none;
   }
 }
@@ -171,8 +182,13 @@
     position: absolute;
     width: 1px;
   }
+
   #main section {
     display: table-cell;
+  }
+
+  #gal_nav {
+    width: 100%;
   }
 }
 
