@@ -37,7 +37,8 @@
   margin-bottom: 2em;
 }
 
-.journal h1, .journal h2, .journal h3, .journal h4, .journal h5, .journal h6 {
+.journal h1, .journal h2, .journal h3, .journal h4, .journal h5, .journal h6,
+.journal article.poetry h3 a {
   font-family: "Roboto Mono";
   font-weight: 300;
   margin: 50px 0 15px 0;
@@ -63,11 +64,22 @@
   top: -6px;
 }
 
-.journal h2 {
+.journal h2, .journal h1.poem-title {
   font-size: 1.4rem;
   line-height: 1.6rem;
-  /*font-size: 1rem;
-  line-height: 1.125rem;*/
+}
+
+.journal h1.poem-title {
+  padding-left: 2rem;
+  padding-top: 0.2rem;
+  font-size: 1.2rem;
+}
+
+.journal h1.poem-title > p {
+  text-transform: initial;
+  text-align: left;
+  margin: 0.5rem 0 0;
+  font-size: 0.875rem;
 }
 
 .journal h2.notepad, .journal h1 {
@@ -92,6 +104,12 @@
   line-height: 14pt;
 }
 
+.journal h6.poem {
+  padding: 0 0 5rem 25%;
+  word-spacing: 0;
+  text-align: left;
+}
+
 .journal h1.category {
   text-align: center;
   font-size: 1rem;
@@ -114,14 +132,14 @@
   color: #aaaaaa;
 }
 
-.journal article.archive {
+.journal article.archive, .journal article.poetry {
   width: 70%;
   margin: 0 auto;
   /*margin-bottom: 50px;
   margin-top: 25px;*/
 }
 
-.journal article.archive h2 {
+.journal article.archive h2, .journal article.poetry h2 {
   color: #aaaaaa;
   font-size: 0.875rem;
   text-align: left;
@@ -130,7 +148,7 @@
   /*margin-bottom: 1rem;*/
 }
 
-.journal article.archive a h3 {
+.journal article.archive a h3, .journal article.poetry h3 {
   font-size: 1rem;
   margin: 10px 0 0 0;
   text-transform: none;
@@ -139,6 +157,11 @@
 
 .journal article.archive a h3:hover {
   color: #aaaaaa;
+}
+
+.journal article.poetry h3 a:hover {
+  color: #aaaaaa;
+  border:  0 !important;
 }
 
 .journal article.archive a h3 span {
@@ -178,6 +201,10 @@
 .journal table,
 .journal pre {
   margin: 2rem 0;
+}
+
+.info p {
+  margin: 0 0 1rem 0;
 }
 
 .journal p {
@@ -254,8 +281,8 @@
 .journal code,
 .journal pre {
   font-family: "Monaco";
-  font-size: 9pt;
-  line-height: 11pt;
+  font-size: 0.5635rem;
+  line-height: 0.6875rem;
   background-color: #F8F8F8;
   font-weight: normal;
 }
@@ -269,14 +296,26 @@
 .journal pre {
   border: 1px solid #CCCCCC;
   overflow: auto;
-  padding: 1em;
-  margin: 2em 0;
+  padding: 1rem;
+  margin: 2rem 0;
 }
 
 .journal pre > code {
   border: 0;
   margin: 0;
   padding: 0;
+}
+
+.journal pre.poem {
+  margin: 0 0 2em 0;
+  font-family: "Roboto";
+  font-weight: 300;
+  font-size: 1rem;
+  line-height: 1.6rem;
+  border: none !important;
+  overflow: auto;
+  padding: 1rem 0 0 2rem !important;
+  background-color: #fefefe !important;
 }
 
 .journal ul, .journal ol {

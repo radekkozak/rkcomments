@@ -199,17 +199,17 @@ img.desaturate {
   padding: 20px 0px 0px 0px;
 }
 
-.books {
+.nav-books {
   position: relative;
   padding: 20px 0px 0px 0px;
 }
 
-.poetry {
+.nav-poetry {
   position: relative;
   padding: 36px 0px 0px 0px;
 }
 
-.varia {
+.nav-varia {
   position: relative;
   padding: 30px 0px 0px 0px;
 }
@@ -738,6 +738,10 @@ a.footnote:hover, a.reversefootnote:hover {
 
 #book-description p#book-info {
   margin-top: 2rem;
+}
+
+span.italic {
+  font-style: italic;
 }
 
 /*.carousel-control {
