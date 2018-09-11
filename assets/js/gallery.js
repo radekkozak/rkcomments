@@ -121,13 +121,13 @@ var imgPreview = {
 
       var bigImageId = "a" + this.id;
       var descriptionId = "b" + this.id;
-
+      console.log("BigImage ID = " + bigImageId);
       var bigImage = document.getElementById(bigImageId);
 
       if(bigImage !== null) {
-        bigImage.className = "active";
-        //activeImage = $('#image-container').children('img.active');
+        console.log("Width of clicked preview big = " + bigImage.width);
         $("#image-container").css({width: bigImage.width});
+        bigImage.className = "active";
       }
 
       var description = document.getElementById(descriptionId);

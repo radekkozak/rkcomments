@@ -116,6 +116,16 @@
   letter-spacing: 0.125em;
 }
 
+.journal h1.archive, .journal h1.poetry {
+  text-align: center;
+}
+
+.journal h1.poetry {
+  margin: 0 0 20px 0;
+  font-size: 1.5rem;
+  line-height: 1.7rem;
+}
+
 .journal h1.category p {
   font-size: 1.875rem;
   margin: 1rem 0;
