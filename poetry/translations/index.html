@@ -1,0 +1,29 @@
+---
+layout: default
+contentclass: journal
+---
+
+<h1 class="poetry">In translation / w przekładzie</h1>
+<hr class="center width80pc">
+<article class="poetry">
+  {% assign authors = site.translated_authors | sort: 'order' %}
+  {% for author in authors %}
+  <h2>{{ author.name }} {{ author.header_description }}</h2>
+    {% for coll in site.collections %}
+    {% if coll.label == author.collection_name %}
+      {% assign poems = coll.docs | sort: 'order' %}
+      {% for poem in poems %}
+        <h3>
+          <a href="{{ poem.url | prepend:site.baseurl }}"
+             title="{{ poem.author }} - {{ poem.title }}">
+            {{ poem.short_title | default: poem.title }}</a>
+          {% if poem.title_pl %}
+          <span><a href="{{ poem.url | prepend:site.baseurl }}#pl"
+                   title="{{ poem.author }} - {{ poem.title_pl }}">PL</a></span>
+          {% endif %}
+        </h3>
+      {% endfor %}
+    {% endif %}
+    {% endfor %}
+  {% endfor %}
+</article>

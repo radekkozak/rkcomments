@@ -1,0 +1,17 @@
+---
+layout: default
+contentclass: journal
+---
+
+<h1 class="poetry">wybór wierszy / selected poems</h1>
+<hr class="center width80pc">
+
+<article class="poetry">
+  <p></p>
+  {% assign poems = site.poems | sort: 'order' %}
+  {% for poem in poems %}
+  <h3>
+    <a href="{{ poem.url | prepend:site.baseurl }}" title="{{ poem.author }} - {{ poem.title }}">{{ poem.title }}</a>
+  </h3>
+  {% endfor %}
+</article>

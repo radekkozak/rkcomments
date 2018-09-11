@@ -56,6 +56,28 @@ permalink: notepad/:year/:month/:day/:title.html
 
 excerpt_separator: "<!--more-->"
 
+collections:
+  poems:
+    output: true
+    permalink: poetry/original/:title.html
+  translated_authors:
+    output: false
+  emily-dickinson:
+    output: true
+    permalink: poetry/translations/:collection/:title.html
+  john-keats:
+    output: true
+    permalink: poetry/translations/:collection/:title.html
+  miroslav-holub:
+    output: true
+    permalink: poetry/translations/:collection/:title.html
+  yehuda-amichai:
+    output: true
+    permalink: poetry/translations/:collection/:title.html
+  charles-simic:
+      output: true
+      permalink: poetry/translations/:collection/:title.html
+
 #repository: "radekkozak/radekkozak.com"
 
 # Staticman comments (full configuration in staticman.yml)
