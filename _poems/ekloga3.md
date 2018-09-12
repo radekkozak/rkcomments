@@ -10,23 +10,23 @@ order: 3
 <h1 class="poem-title">{{ page.title }}</h1>
 
 <pre class="poem">
-Nad ranem zostaję sam i wychodzę na jezioro
+Nad ranem zostaję sam i wychodzę na jezioro 
 Obchodzę się bez cudów —
-na środku jest już dobrze, grubo
+Na środku jest już dobrze, grubo
 
-choć na obrzeżach nie do końca jeszcze
-zamarzło. Trzeba uważać. Lód od miesiąca
-wciąż tylko dudni o świcie i trzeszczy
+Choć na obrzeżach nie do końca jeszcze 
+Zamarzło. Trzeba uważać. Lód od miesiąca 
+Wciąż tylko dudni o świcie i trzeszczy
 
 Coś wyje pod spodem, kiedy kładę się jak fala
-plecami na jego twarzy; jakieś głosy na głębi, przebite
-włócznią stycznia. W gruncie rzeczy nic nie zamarza
+Plecami na jego twarzy; jakieś głosy na głębi, przebite
+Włócznią stycznia. W gruncie rzeczy nic nie zamarza
 
-Wszystko pracuje. Zima, nie zima. Jak w kopalniach
-pajęczej Kołymy, mówię do siebie na głos
-z bluźnierstwem prawdy na ustach, której nikt tu nie usłyszy
+Wszystko pracuje. Zima, nie zima Jak w kopalniach 
+Pajęczej Kołymy, mówię do siebie na głos 
+Z bluźnierstwem na ustach, którego nikt tu nie usłyszy
 
-I tylko dwie na odległym brzegu topole, jak palce
-na znak uniesione. I nagie światło za nimi
-które mi mówi — uciekaj
+I tylko dwie na odległym brzegu topole, jak palce 
+Na znak uniesione. I nagie światło za nimi 
+Które mi mówi — uciekaj
 </pre>

@@ -6,7 +6,7 @@ title: Eschaton
 order: 11
 ---
 
-<h1 class="poem-title">{{ page.title }}</h1>
+<h1 class="poem-title">{{ page.title }}<p>feat. Arnold Słucki</p></h1>
 
 <pre class="poem">
 Widziałem koła, gniewne koła;

@@ -7,9 +7,7 @@ order: 5
 ---
 
 <h1 class="poem-title">{{ page.title }}</h1>
-
-<pre class="poem">
-	   			<span class="italic">Joannie</span>
+<pre class="poem">                          <span class="italic">Joannie</span>
 
 
 Wyciągasz rękę i prostując palec
