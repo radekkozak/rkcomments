@@ -175,6 +175,10 @@ img.desaturate {
   /*margin-bottom: 2.5rem !important;*/
 }
 
+#main section > div.info {
+  line-height: 1.125rem;
+}
+
 .menu-title {
   color: darkgrey;
   border-bottom: 1px darkgrey dashed;
@@ -377,15 +381,24 @@ img.desaturate {
 
 #description {
   float: left;
-  color: #666;
+  /*color: #666;*/
   display: table-cell;
   width: calc(100% - 200px);
+
+  /* MAGNUM APPROACH */
+  color: #898989;
+  line-height: 1.125rem !important;
+  font-size: 0.8125rem !important;
+  /*letter-spacing: .025em !important;*/
+  /*font-family: "fira-sans",sans-serif;
+  -webkit-font-smoothing: antialiased;
+  font-weight: 300 !important;*/
 }
 
 #description span {
   text-align: justify;
   text-justify: inter-word;
-  font-size: 0.75rem; /* 0.875rem; */
+  /*font-size: ;  0.875rem; 0.75rem*/
   display: none;
 }
 

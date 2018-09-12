@@ -64,7 +64,7 @@
   top: -6px;
 }
 
-.journal h2, .journal h1.poem-title {
+.journal h2 {
   font-size: 1.4rem;
   line-height: 1.6rem;
 }
@@ -73,6 +73,8 @@
   padding-left: 2rem;
   padding-top: 0.2rem;
   font-size: 1.2rem;
+  line-height: 1.6rem;
+  letter-spacing: 0.2rem;
 }
 
 .journal h1.poem-title > p {
@@ -221,7 +223,7 @@
   clear: both;
 }
 
-.journal blockquote {
+.journal blockquote, .info blockquote {
   /*margin: 3rem 2rem 3rem 10rem;*/
   padding-left: 2rem;
   padding-right: 2rem;
@@ -248,7 +250,7 @@
   margin: 0.65rem 0;
 }
 
-.journal .quote-author {
+.journal .quote-author, .info .quote-author {
   /*margin: 1em 3em 3em 0;*/
   margin: 2rem 3rem 0.6rem 0;
   float: right;
@@ -258,7 +260,7 @@
   color: #333; /*#8c8c8c;*/
 }
 
-.journal .quote-author:before {
+.journal .quote-author:before, .info .quote-author:before {
   content: "\223C";
   margin-right: 6px;
   font-size: 16px;
