@@ -1,6 +1,7 @@
 ---
 layout: category
 category: Poetry
+title: Poetry
 ---
 
 This file is only used to initiate the compilation of a given category page .
