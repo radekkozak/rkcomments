@@ -27,34 +27,34 @@ History licked the corners of its bloody mouth.
 On the pay channel, a man and a woman
 Were trading hungry kisses and tearing off
 Each other's clothes while I looked on
-With die sound off and the room dark
+With the sound off and the room dark
 Except for the screen where the color
 Had too much red in it, too much pink.
 </pre>
-
+<br/>
 <h1 id="pl" class="poem-title">{{ page.author }} - {{ page.title_pl }}</h1>
 
 <pre class="poem">
 Uśmiercono miliony; wszyscy byli niewinni.
-Siedziałem w swoim pokoju. Prezydent mówił
-O wojnie jak o magicznych miłosnych napojach.
+Siedziałem w swoim pokoju. Prezydent
+Opowiadał o wojnie jak o miłosnym eliksirze.
 Przecierałem oczy ze zdumienia.
-W lustrze moja twarz ukazała mi się
+W lustrze moja twarz wyglądała
 Jak podwójnie ostemplowany znaczek.
 
-Żyłem w dostatku, ale życie samo w sobie było okropne.
+Żyłem dobrze, ale życie samo w sobie było straszne.
 Niezliczone rzesze żołnierzy tamtego dnia,
-Tabuny uchodźców stłoczone po ulicach.
-Oczywiście wszyscy zniknęli bez śladu
-Jak za dotknięciem czarodziejskiej ręki.
-Historia oblizała kąciki swoich krwawych ust.
+Niezliczone tabuny uchodźców stłoczone na drogach.
+Naturalnie wszyscy zniknęli
+Jak za dotknięciem ręki.
+Historia oblizała kąciki krwawych ust.
 
-Na płatnym kanale, mężczyzna i kobieta
-Wymieniali łapczywie pocałunki zdzierając
-Nawzajem swoje ubrania. Ja oglądałem
-Z wyłączonym głosem. W ciemnym pokoju
-Jedynie światło z kolorowego ekranu,
-Na którym zbyt wiele czerwieni i różu.
+Na płatnym kanale mężczyzna i kobieta
+Wymieniali łapczywie pocałunki, zdzierając
+Nawzajem swoje ubrania, a ja patrzyłem,
+Z wyłączonym głosem, w ciemnym pokoju,
+Gdzie tylko światło z kolorowego ekranu,
+Na którym zbyt wiele czerwieni, zbyt wiele różu.
 </pre>
 
 <h6 class="poem">translated by: {{ page.translator }}</h6>

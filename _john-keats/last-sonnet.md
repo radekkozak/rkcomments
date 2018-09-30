@@ -25,7 +25,7 @@ To feel for ever its soft fall and swell,
 Still, still to hear her tender-taken breath,
 And so live ever—or else swoon to death.
 </pre>
-
+<br/>
 <h1 id="pl" class="poem-title">{{ page.author }} - {{ page.title_pl }}</h1>
 <pre class="poem">
 Jasna gwiazdo, gdybym mógł jak ty niezmiennie—

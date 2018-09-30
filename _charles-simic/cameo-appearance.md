@@ -4,13 +4,13 @@ contentclass: journal
 author: Charles Simic
 translator: Radek Kozak
 title: Cameo appearance
-title_pl: Cameo (Gościnnie)
+title_pl: Występ gościnny
 ---
 
 <h1 class="poem-title">{{ page.author }} - {{ page.title }}</h1>
 
 <pre class="poem">
-I had a small, non speaking part
+I had a small, nonspeaking part
 In a bloody epic. I was one of the
 Bombed and fleeing Humanity.
 In the distance our great leader
@@ -26,7 +26,7 @@ Like if she were showing us a tooth
 
 That hurts badly. The hundred times
 I rewound the tape, not once
-Could they catch sight from me
+Could they catch sight of me
 In that huge gray crowd,
 That was like any other gray crowd.
 
@@ -38,37 +38,37 @@ And then they were no more
 As we stood dazed in the burning city,
 But, of course, they didn't film that.
 </pre>
-
-<h1 id="pl" class="poem-title">Charles Simic - Fabryka</h1>
+<br/>
+<h1 id="pl" class="poem-title">Charles Simic - Występ gościnny</h1>
 
 <pre class="poem">
-Dostałem kiedyś małą rólkę, bez żadnej kwesti,
-W krwawej epickiej historyjce. Byłem jednym z wielu
-Pośród bombardowanej i uciekającej ludności cywilnej.
-W oddali nasz wspaniały przywódca
+Dostałem kiedyś małą rólkę, bez kwestii,
+W krwawej epopei. Byłem jednym z wielu
+Pośród bombardowanej, uciekającej ludności cywilnej.
+W oddali nasz wielki wódz
 Piał jak kogut z balkonu,
-A może był to świetny aktor
-Grający naszego wspaniałego dowódcę ?
+A może był to wielki aktor
+Grający naszego wielkiego wodza?
 
-O tam, to właśnie ja, powiedziałem do dzieciaków.
-Upchany pomiędzy mężczyznę z dwiema
+O tam, to właśnie ja, mówiłem do dzieciaków.
+Wciśnięty między mężczyznę z dwiema
 Zabandażowanymi rękami uniesionymi do góry
-I staruszkę z szeroko otwartymi ustami,
-Jakby gdyby chciała pokazać wszystkim
+I staruszkę z ustami rozdziawionymi,
+Jakby próbowała pokazać nam
 
 Swój bolący ząb. Przewijałem już
 Taśmę chyba setny raz, ale wciąż
-Nie mogły wyłowić mojej twarzy
+Nie mogły wyłowić mnie wzrokiem
 W tym ogromnym szarym tłumie,
 Który był jak każdy szary tłum.
 
-Kłusować mi do łóżek, powiedziałem w końcu.
-Wiem na pewno że tam byłem.
-Mieli czas tylko na jedno ujęcie.
-Uciekaliśmy, samoloty rozczesywały nam włosy,
-Potem zniknęły a my staliśmy
+Kłusować mi do łóżka - powiedziałem w końcu.
+Wiem, że tam byłem. Mieli czas 
+Tylko na jedno ujęcie.
+Uciekaliśmy, samoloty czesały nam włosy,
+Potem zniknęły, a my staliśmy
 Nieprzytomnie pośród płonącego miasta,
-Ale, oczywiście, tego już nie nakręcili.
+Ale tego, oczywiście, już nie nakręcili.
 </pre>
 
 <h6 class="poem">translated by: {{ page.translator }}</h6>

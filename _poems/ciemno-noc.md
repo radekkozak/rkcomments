@@ -3,6 +3,7 @@ layout: default
 contentclass: journal
 author: Radek Kozak
 title: Ciemno.Noc
+title_en: Dark. Night
 slug: ciemno-noc
 order: 4
 ---
@@ -29,4 +30,27 @@ Nieśmiertelne, przybija do brzegu
 Balkonu, i rosa wykwita
 
 Na długich szpilkach sosen
+</pre>
+<br/>
+<h1 id="en" class="poem-title">{{ page.title_en }}</h1>
+<pre class="poem">
+is still bleeding. Pus of neons
+Studded thickly like brads drips
+Slowly into ferroconcrete city; it drills
+— The silent erosion, the glow
+Cold as led lights in false bathroom ceiling
+Yawning cratch of day awaits
+
+For in waiting it is pleased
+
+x
+
+Only you, the furrowed seconds
+In the rills of soft synapses; herded
+Axons of the memory — just before dawn
+When the sun
+Immortal, docks to shore
+Of balcony and the dew blooms forth
+
+On long needles of the pine tree
 </pre>

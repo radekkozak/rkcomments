@@ -41,40 +41,40 @@ Only the knife in the cage, glinting like a mirror,
 And the chair in the far corner
 Where someone once sat facing the brick wall.
 </pre>
-
+<br/>
 <h1 id="pl" class="poem-title">Charles Simic - Fabryka</h1>
 
 <pre class="poem">
 Maszyny zniknęły, ci którzy je obsługiwali również.
 Pojedyncze krzesło z wysokim oparciem stało jak tron
 W całej tej pustej przestrzeni.
-Rozłożyłem się wygodnie na podłodze
-Szykując się na długą bezsenną noc pełną rozmyślań.
+Ja rozłożony na podłodze szykowałem się
+Na noc krótkiego snu i długich rozmyślań.
 
-Pusta ptasia klatka zwisała z przewodów parowych.
-Trzymałem w niej jabłko i mały nożyk do obierania.
+Pusta klatka dla ptaków wisiała na rurze.
+Trzymałem w niej jabłko i nożyk do owoców.
 Podłogę wokół siebie wyłożyłem gazetami
-Bym mógł się zerwać przy najmniejszym szeleście.
-To było jak drapanie pióra,
-Milcząca noc robiąca zapiski w swoim pamiętniku.
+Żeby móc się zerwać przy najmniejszym szeleście.
+To było jak skrzypienie pióra;
+Nocna cisza robiąca zapiski w dzienniku.
 
 O szczurach, które przychodziły z wizytą
 Miałem jak najlepszą opinię.
-Potrafiły stawać grzecznie na dwóch łapach
-Jakby składały uprzejmie wniosek
-W sprawach najwyższej wagi.
+Stawały na dwóch łapkach
+Jakby miały się zwrócić z grzeczną prośbą
+W kwestii najwyższej wagi.
 
 Miało też miejsce wiele innych dziwnych rzeczy.
-Jednego razu naga kobieta wdrapała się
-Na krzesło aby sięgnąć jabłka.
-Obserwowałem ją z ziemi jak staje na palcach,
+Jednego razu na krzesło wdrapała się naga kobieta
+I sięgnęła po jabłko w klatce.
+Obserwowałem z ziemi, jak staje na palcach;
 Jej ręka trzepocząca w klatce jak ptak.
 
-Innym jeszcze razem, słońce zajrzało przez zakurzone szyby
-Aby sprawdzić która godzina. Ale nie było żadnego zegara,
-Tylko nożyk w klatce, błyszczący jak lustro,
-I krzesło stojące daleko w rogu
-Gdzie ktoś siedział kiedyś twarzą do ściany.
+W inne dni słońce zaglądało przez zakurzone szyby
+Żeby sprawdzić, która godzina. Lecz nie było żadnego zegara,
+Tylko nożyk w klatce, błyskający jak lusterko,
+I krzesło stojące daleko w rogu,
+Gdzie ktoś siedział kiedyś twarzą do ceglanej ściany.
 </pre>
 
 <h6 class="poem">translated by: {{ page.translator }}</h6>

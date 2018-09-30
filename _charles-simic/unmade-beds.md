@@ -4,7 +4,7 @@ contentclass: journal
 author: Charles Simic
 translator: Radek Kozak
 title: Unmade beds
-title_pl: Niepościelone łóżka
+title_pl: Nieposłane łóżka
 ---
 
 <h1 class="poem-title">{{ page.author }} - {{ page.title }}</h1>
@@ -31,11 +31,11 @@ When the meanest of hearts
 Comes to believe
 Happiness can last forever.
 </pre>
-
+<br/>
 <h1 id="pl" class="poem-title">{{ page.author }} - {{ page.title_pl }}</h1>
 
 <pre class="poem">
-Lubią zacienione pokoje
+Lubią zacienione pokoje,
 Złuszczoną tapetę,
 Pęknięcia na suficie,
 Muchy na poduszce.
@@ -49,9 +49,9 @@ Pokój to przyciemnione kino,
 W którym leci
 Ziarnisty, czarno-biały film.
 
-Niewyraźne roznegliżowane ciała
+Zarysy roznegliżowanych ciał
 W tej chwili słodkiego lenistwa
-Zaraz po kochaniu,
+Tuż po kochaniu,
 Kiedy nawet najpodlejsze serca
 Zaczynają wierzyć
 Że szczęście może trwać wiecznie.

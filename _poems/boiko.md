@@ -3,6 +3,7 @@ layout: default
 contentclass: journal
 author: Radek Kozak
 title: Boiko
+title_en: Boiko
 order: 9
 ---
 
@@ -30,6 +31,32 @@ Pytali się wciąż o drogę. Jak obłąkane zwierzęta
 Bez pamięci, które zapomniały swój szlak
 Zwierzęta pełznące na oślep do wodopoju
 
+
+<span class="italic" style="font-size: 0.875rem">2016, Turkivskyi raion</span>
+</pre>
+<br/>
+<h1 id="en" class="poem-title">{{ page.title_en }}</h1>
+<pre class="poem">
+We stood long in stillness, watching
+The valley opening before us. Fog —
+The great harvestman, dragged behind him, like abdomen
+Gray glaze of dawn. Hordes of oxen floating
+In silence, preserved in the membrane of things
+As if time has not yet slaughtered them, not yet
+Separated them from life, from this landscape. Swarthy
+Salt faces in the streams of light, plowed and
+Hollowed by the local wind — completely
+Like in pre-war Ukrainian albums
+— We daydreamed that we saw them
+Down there, looming by
+Floating side by side
+
+In the evening, late in the evening
+On the outskirts of some dwarfed city
+Their descendants, clutching to the dead air,
+They were asking for the way. Like raving animals
+Without memory that had forgotten their trail
+Animals creeping blindly to a waterhole
 
 
 <span class="italic" style="font-size: 0.875rem">2016, Turkivskyi raion</span>

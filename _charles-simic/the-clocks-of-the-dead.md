@@ -26,7 +26,7 @@ The little wheels they keep in reserve
 Will have rolled away
 Into many hard-to-find placed.
 
-Just thinking about this, I forgot to wind the dock.
+Just thinking about this, I forgot to wind the clock.
 We woke up in the dark.
 How quiet the city is, I said.
 Like the clocks of the dead, my wife replied.
@@ -34,32 +34,33 @@ Grandmother on the wall,
 I heard the snows of your childhood
 Begin to fall.
 </pre>
-
+<br/>
 <h1 id="pl" class="poem-title">{{ page.author }} - {{ page.title_pl }}</h1>
 
 <pre class="poem">
 Którejś nocy poszedłem dotrzymać zegarowi towarzystwa.
-Pamiętam, głośno tykał gdy mijała północ
-Jak gdyby bał się czegoś osobliwie.
-To jak gwizdanie tuż za cmentarzem, wyjaśniałem
+Pamiętam, głośno tykał gdy mijała północ,
+Jakby bał się czegoś osobliwie.
+To jak robienie dobrej miny do złej gry
+Tłumaczyłem
 Ale mniejsza o to,
-Powiedziałem mu że rozumiem.
+Powiedziałem, że rozumiem.
 
 Kiedyś zegary takie jak ten
 Bawiły w każdej kuchni w Ameryce.
-Dziś produkująca je fabryka stoi z wybitymi oknami
-A starsi mężczyźni z nocnej zmiany już dawno w łodzi Charona.
+Dziś wszystkie okna fabryki są wybite.
+Staruszkowie z nocnej zmiany są w łodzi Charona.
 W dzień w którym się zatrzymasz, rzekłem do zegara
-Małe kółka które trzymają w rezerwie czas
-Potoczą się przed siebie
-Do niedostępnych miejsc.
+Zębate kółka, które trzymają w zapasie
+Zdążą się już potoczyć
+Do wielu niedostępnych miejsc.
 
 Rozmyślając o tym, zapomniałem go nakręcić.
-Obudziliśmy się w ciemnościach.
-Jak ciche jest miasto - powiedziałem
-Jak zegary umarłych - odpowiedziała żona.
+Obudziliśmy się w ciemności.
+Jak ciche jest miasto, powiedziałem
+Jak zegary umarłych, odparła żona.
 Babuszko wisząca na ścianie,
-Słyszałem jak zaczynają padać
+Słyszałem, jak zaczynają padać
 Śniegi twojego dzieciństwa.
 </pre>
 

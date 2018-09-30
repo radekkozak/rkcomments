@@ -4,7 +4,7 @@ contentclass: journal
 author: Charles Simic
 translator: Radek Kozak
 title: Pastoral harpsichord
-title_pl: Sielski klawesyn
+title_pl: Pastoralny klawesyn
 ---
 
 <h1 class="poem-title">{{ page.author }} - {{ page.title }}</h1>
@@ -32,29 +32,28 @@ And when she wouldn't oblige,
 I went out to make a chamber music
 Against the sunflowers in the yard.
 </pre>
-
+<br/>
 <h1 id="pl" class="poem-title">{{ page.author }} - {{ page.title_pl }}</h1>
 
 <pre class="poem">
 Dom z przesłoniętą werandą
-W drodze do nikąd.
+Na drodze donikąd.
 Gorąco. Żona topless
-Z paczką "Frito Banditos" na kolanach.
+Z paczką Frito Banditos na kolanach.
 Prezydent Bush z ekranu
-Śledzi każdy jej kęs.
+Śledzący każdy jej kęs.
 
-Kiepski odbiór,
-To jedyna zaleta tego miejsca,
+Kiepski odbiór, to jedyna 
+Zaleta tego miejsca,
 Mówię do kundla
 Sapiącego przyjaźnie w nogach.
-
 Na innym kanale kaznodzieja
-W asyście swoich duchów
-Zamyka oczy pełne łez
-By modlić się o obfitość składki.
+Pod opieką swego ducha wychodzi
+Z przymkniętymi oczami pełnymi łez
+By modlić się o dolary.
 
-"Przynieś mi jeszcze piwa", powiedziałem
-Do jaśnie pani, a gdy nie usłuchała,
+"Jeszcze jedno piwo" - powiedziałem do jaśnie pani, 
+A gdy nie posłuchała,
 Wyszedłem wygarnąć kameralny koncert
 Słonecznikom rosnącym w ogrodzie.
 </pre>

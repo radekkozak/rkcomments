@@ -21,17 +21,17 @@ The weary old cows, hesitating,
 At long last growing suspicious
 Just as the blade drops down on them.
 </pre>
-
+<br/>
 <h1 id="pl" class="poem-title">{{ page.author }} - {{ page.title_pl }}</h1>
 
 <pre class="poem">
-Wieczorami przebiegały swoimi krwawymi odnóżami
+Wieczorami przebiegały krwawymi odnóżami
 Po zamarłych stronach moich podręczników.
 Gdy przymknę oczy wciąż jeszcze słyszę
 Szum drzew na naszej ulicy
-Żegnający posępnie tamto lato,
+Żegnających posępnie tamto lato,
 
-I któregoś z domowników wspominających
+I kogoś z domowników wspominających
 Stare zmęczone krowy, pełne wahania
 I spóźnionych podejrzeń,
 W chwili gdy spada na nie ostrze.

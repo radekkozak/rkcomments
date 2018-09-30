@@ -45,7 +45,7 @@ A cute little number an old man said,
 But who was she?
 Miss Jones, the guest book told us.
 </pre>
-
+<br/>
 <h1 id="pl" class="poem-title">Charles Simic - Czy spotkałeś już pannę Jones?</h1>
 
 <pre class="poem">
@@ -57,8 +57,8 @@ Odsłaniała dekolt
 
 Obca zebranym żałobnikom, próbowała
 Oddalić się cicho chybocząc na obcasach,
-Podczas gdy reszta
-Obserwowała jej odchodzący tyłek
+Podczas gdy oni
+Obserwowali jej odchodzący tyłek
 Z wyraźnym zainteresowaniem.
 
 Gdy tak siedzimy pograżeni w żałobie
@@ -70,19 +70,19 @@ Szczury kanałowe obwąchują
 Oświetlone bankomaty
 A jej piękno trwa.
 
-Panno Jones, da sobie pani radę -
-Z tymi insomniakami, przygłuszonymi lekami
+Panno Jones, da sobie pani radę
+Z tymi insomniakami, zawianymi
 Tu gdzie nalewają wina z butelki
-Przewiązanej białą serwetą, gdzie podają
+Owiniętej białą serwetą, gdzie wcinają
 Kiełbaski jagnięce ze smażonymi ziemniakami
 I gdzie chodują sentymentalne wspomnienia -
 
-Pomyślałem, patrząc w jaki sposób przeszła obok
+Pomyślałem, patrząc w jaki sposób przemknęła obok
 Otwartej trumny naszego drogiego przyjaciela
 Zaczynającego właśnie długą siestę.
-Uroczy z niej numerek, skwitował starszy pan,
+Uroczy z niej numerek - skwitował starszy pan,
 Ale kto to był właściwie ?
-Panna Jones, odpowiedziała książka gości.
+Panna Jones, odpowiedziała nam książka gości.
 </pre>
 
 <h6 class="poem">translated by: {{ page.translator }}</h6>

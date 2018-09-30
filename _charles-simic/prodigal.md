@@ -29,7 +29,7 @@ In the rain.
 I'm always watching and worrying about her.
 
 Everything is a magic ritual,
-a secret cinema,
+A secret cinema,
 The way she appears in a window hours later
 To set the empty bowl
 And spoon on the table.
@@ -42,7 +42,7 @@ Empty room, empty house,
 While the rain keeps
 Knocking at the front door.
 </pre>
-
+<br/>
 <h1 id="pl" class="poem-title">{{ page.author }} - {{ page.title_pl }}</h1>
 
 <pre class="poem">
@@ -54,24 +54,24 @@ Nad moją matką i jej starym psem.
 
 Jak ona wolno się teraz posuwa
 W niedzielnych butach mojego ojca.
-Pies przy jej boku —
+Pies przy jej nodze
 Dygocze z każdym krokiem
 Próbując dotrzymać jej tempa.
 
-Stoję na rogu ulicy
-Z wygoloną głową. Czekam.
-Myśli przeskakują w mojej głowie
-Jak wróbel w deszczu.
-Bez przerwy wypatruję i martwię się o nią.
+Czekam na drugim rogu ulicy
+Z wygoloną głową
+Moje myśli przeskakują w niej jak wróbel
+W deszczu.
+Cały czas obserwuję i martwię się o nią.
 
 To wszystko jest jak magiczny rytuał,
-Sekretne kino
-To jak się pojawia w oknie parę godzin później
+Sekretne kino -
+To jak się pojawia w oknie kilka godzin później
 Aby ustawić pustą miskę
 I łyżkę na stole.
-Potem znika
+A potem znika,
 By dzień mógł przeminąć,
-A noc mogła zapaść
+I noc mogła zapaść
 
 Do pustej miski,
 Do pustego pokoju, do pustego domu,

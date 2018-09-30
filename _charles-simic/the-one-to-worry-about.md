@@ -32,14 +32,14 @@ Her face was solemn, her eyes averted,
 While she placed a muffin in my hand,
 As if all along she knew what I was thinking.
 </pre>
-
+<br/>
 <h1 id="pl" class="poem-title">{{ page.author }} - {{ page.title_pl }}</h1>
 
 <pre class="poem">
 Poległem całkowicie w wyobrażaniu sobie nicości.
-Zawsze zjawiało się coś by dotrzymać mi towarzystwa:
+Zawsze zjawiało się coś, by dotrzymać mi towarzystwa:
 Mały bezimienny robak przemierzający stół,
-Wspomnienie matki, dzwonienie w uszach.
+Wspomnienie matki, dzwonienie w uchu.
 Byłem rozkojarzony i zakłopotany.
 Dziura nigdy nie jest dziurą w pustce.
 
@@ -52,11 +52,11 @@ Nic na tym świecie nie jest święte.
 
 Byłem wciąż lekko poirytowany wchodząc do piekarni
 Gdy z zaplecza wyszła mnie obsłużyć nieznajoma kobieta
-Ubrana jak na wieczorne wyjście w miasto
+Ubrana, jak na wieczorne wyjście w miasto,
 W obcisłą, czarną sukienkę z głębokim dekoltem.
-Gdy wsadzała mi do ręki babeczkę
+Kiedy wkładała mi do ręki babeczkę
 Jej twarz była poważna, wzrok urażony,
-Jak gdyby od początku wiedziała, co mi chodzi po głowie.
+Jakby od początku wiedziała, co mi chodzi po głowie.
 </pre>
 
 <h6 class="poem">translated by: {{ page.translator }}</h6>

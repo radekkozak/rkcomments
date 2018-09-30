@@ -26,7 +26,7 @@ As Enemies — away —
 Just looking round to see how far
 It is — Occasionally —
 
-<span class="italic" style="font-size: 0.875rem">( 467 / following Johnson’s version )</span>
+<span class="italic" style="font-size: 0.875rem">( following Johnson’s version )</span>
 </pre>
 <br/>
 <h1 id="pl" class="poem-title">{{ page.author }} - {{ page.title_pl }}</h1>

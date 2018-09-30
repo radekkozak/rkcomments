@@ -31,27 +31,27 @@ The dog got the stick and looked back at us.
 And that was the whole show.
 </pre>
 <br/>
-<h1 id="pl" class="poem-title">Charles Simic - Wiejski jarmark<p>Dla Hayden Carruth</p></h1>
+<h1 id="pl" class="poem-title">Charles Simic - Wiejski jarmark<p>Dla Haydena Carrutha</p></h1>
 <pre class="poem">
-Jeśli nie widziałeś nigdy sześcionogiego psa,
+Jeśli nie widziałeś psa o sześciu łapach,
 Nic nie szkodzi.
 My widzieliśmy, choć głównie jak leżał w kącie.
 Jeśli chodzi o dodatkowe łapy,
 
-Można było prędko przyzwyczaić się do ich widoku
+Można było szybko przyzwyczaić się do ich widoku
 I zacząć myśleć o innych sprawach.
-Przykładowo, że ta noc jest zbyt ciemna i zimna
+Przykładowo, że ta noc jest zbyt zimna i mroczna
 By plątać się po jarmarku.
 
-Naraz właściciel rzucił psu patyk
-A ten zaczął za nim gonić na czterech łapach,
-Pozostałe dwie swobodnie dyndały w tyle.
-Na ten widok jakaś dziewczyna parsknęła śmiechem.
+Nagle właściciel psa rzucił mu patyk
+A ten zaczął za nim gonić 
+Na czterech łapach, pozostałe dwie dyndały 
+W tyle, jakaś dziewczyna piszczała z uciechy.
 
-Była pijana, tak samo jak mężczyzna
-Który nieprzerwanie całował jej szyję.
+Była pijana, podobnie jak mężczyzna
+Który bez ustanku całował jej szyję.
 W końcu pies dopadł patyk i obejrzał się na nas.
-I to było całe przedstawienie.
+I tak skończyło się całe to widowisko.
 </pre>
 
 <h6 class="poem">translated by: {{ page.translator }}</h6>

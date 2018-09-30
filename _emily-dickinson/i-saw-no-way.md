@@ -21,7 +21,7 @@ A Speck upon a Ball —
 Went out upon Circumference —
 Beyond the Dip of Bell —
 
-<span class="italic" style="font-size: 0.875rem">( 378 / following Johnson’s version )</span>
+<span class="italic" style="font-size: 0.875rem">( following Johnson’s version )</span>
 </pre>
 <br/>
 <h1 id="pl" class="poem-title">{{ page.author }} - {{ page.title_pl }}</h1>

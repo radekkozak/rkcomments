@@ -35,7 +35,7 @@ Just an arm, now and then, an officer arm
 Wielding a saber from a crack
 In my deaf grandmother's kitchen floor.
 </pre>
-
+<br/>
 <h1 id="pl" class="poem-title">Charles Simic - Wielka wojna</h1>
 
 <pre class="poem">
