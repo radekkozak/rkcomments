@@ -7,6 +7,7 @@ contentclass: gallery
 {% assign name = page.gallery %}
 {% assign descriptions = page.descriptions %}
 {% assign info_available = page.info_available %}
+{% assign description_full = page.description_full %}
 
 <div id="image-container">
 
@@ -16,7 +17,7 @@ contentclass: gallery
   <img src="img/Radek-Kozak-{{ name }}-{{ i }}.jpg" id=a{{ i }}>
   {% endfor %}
 
-  {% include partials/gallery-nav.html descriptions=descriptions items=items info_available=info_available %}
+  {% include partials/gallery-nav.html descriptions=descriptions items=items info_available=info_available description_full=description_full %}
 
 </div>
 

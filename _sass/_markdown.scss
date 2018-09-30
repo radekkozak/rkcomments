@@ -5,6 +5,14 @@
   font-weight: 300;
   font-size: 1rem;
   line-height: 1.6rem;
+
+  /*-webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
+  hyphenate-limit-lines: 2;
+  hyphenate-limit-chars: 3;
+  hyphenate-limit-zone: 40px;*/
 }
 
 .journal article {
@@ -15,7 +23,7 @@
 .journal em {
   font-style: italic;
   margin: 0 0.2em;
-  letter-spacing: 0.2em;
+  /*letter-spacing: 0.2em;*/
   word-spacing: 0;
 }
 
@@ -61,7 +69,7 @@
 
 .journal h1 span, .journal h2 span {
   font-size: 0.75rem;
-  top: -6px;
+  top: -5px;
 }
 
 .journal h2 {
@@ -72,6 +80,7 @@
 .journal h1.poem-title {
   padding-left: 2rem;
   padding-top: 0.2rem;
+  margin-bottom: 2.25rem !important;
   font-size: 1.2rem;
   line-height: 1.6rem;
   letter-spacing: 0.2rem;
@@ -85,8 +94,8 @@
 }
 
 .journal h2.notepad, .journal h1 {
-  margin: 0 0 20px 0;
-  font-size: 1.8rem;
+  margin: 0 0 2.5rem 0;
+  font-size: 1.5rem;
   line-height: 2rem;
 }
 
@@ -186,6 +195,26 @@
   border-top: 1px dotted #cccccc;
 }
 
+.journal > p {
+  text-indent: 2rem;
+}
+
+.no-indent {
+  text-indent: 0 !important;
+}
+
+.notice {
+  font-size: 0.875rem;
+}
+
+.journal > p:first-of-type {
+  text-indent: 0;
+}
+
+.journal article > p {
+  text-indent: 0;
+}
+
 .journal article > p:last-child {
   text-align: right;
   padding-top: 1em;
@@ -200,8 +229,8 @@
 .journal .footnotes {
   margin: 4rem 0;
   border-top: 1px solid #cccccc;
-  font-size: 1rem;
-  line-height: 1.125rem;
+  font-size: 0.875rem;
+  line-height: 1rem;
 }
 
 .journal p,
@@ -231,33 +260,69 @@
   border-left: 1px solid #c22d2d;
   font-style: italic;
   color: #444; /*#8c8c8c;*/
-  text-align: justify;
+  /*text-align: justify;*/
   /*text-align: left;*/
 
-  width: 70%;
+  /*width: 70%;*/
   float: right;
   position: relative;
   clear: both;
-  margin: 2rem 2rem 4rem 16rem;
+  margin: 1rem 2rem 3rem 16rem;
+  font-family: BoxedLight;
+  /*font-size: 0.9375rem;*/
+}
+
+blockquote + blockquote {
+  margin-top: 2rem !important;
+  margin-bottom: 2rem !important;
 }
 
 .journal blockquote blockquote {
   border: none;
-  margin: 1rem 0 0.6rem 0;
+  margin: 2rem 0 0.6rem 0;
+}
+
+.journal h1 + blockquote:first-of-type {
+  margin-top: 2rem;
 }
 
 .journal blockquote p {
-  margin: 0.65rem 0;
+  margin: 0 0 2rem 0;
 }
+
+.journal blockquote p:last-of-type {
+  margin: 0 !important;
+}
+
+.journal blockquote p:last-of-type > span {
+  margin-bottom: 0;
+}
+
+.journal blockquote blockquote p {
+  margin-bottom: 0 !important;
+}
+
+/*.journal blockquote p:nth-of-type(2) {
+  text-align: right;
+  font-style: normal;
+  font-size: 0.875rem;
+  margin-bottom: 0;
+}
+
+.journal blockquote p:nth-of-type(2):before {
+  content: "~";
+  margin-right: 6px;
+}*/
 
 .journal .quote-author, .info .quote-author {
   /*margin: 1em 3em 3em 0;*/
-  margin: 2rem 3rem 0.6rem 0;
+  margin: 1rem 0 2rem 0;
   float: right;
   text-align: right;
   font-style: normal;
   width: 100%;
   color: #333; /*#8c8c8c;*/
+  font-size: 0.8125rem;
 }
 
 .journal .quote-author:before, .info .quote-author:before {
@@ -326,7 +391,7 @@
   line-height: 1.6rem;
   border: none !important;
   overflow: auto;
-  padding: 1rem 0 0 2rem !important;
+  padding: 0rem 0 0 2rem !important;
   background-color: #fefefe !important;
 }
 
@@ -342,6 +407,17 @@
 
 .journal ol {
   list-style: decimal outside none;
+}
+
+.journal .footnotes p {
+  margin: 0.4rem 0;
+}
+
+.journal .footnotes ol:before {
+  content: "Wykorzystane materiały:";
+  display: block;
+  margin-bottom: 1.5rem;
+  font-style: italic;
 }
 
 .journal ol.footnotes-list {

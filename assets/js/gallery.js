@@ -9,15 +9,20 @@ function setNext() {
   var activeImage = $('img.active');
   var activeTxt = $('span.active');
 
+
   activeImage.removeClass('active');
-  activeTxt.removeClass('active');
+  if(activeTxt.attr('id') !== 'b0') {
+    activeTxt.removeClass('active');
+  }
 
   if (activeImage.next().length > 0 && currentImage < maxImage) {
     var next = activeImage.next();
     var nextTxt = activeTxt.next();
     $("#image-container").css({width: next.width()});
     next.addClass('active');
-    nextTxt.addClass('active');
+    if(activeTxt.attr('id') !== 'b0') {
+      nextTxt.addClass('active');
+    }
     currentImage++;
   } else {
     var current = $('#image-container').children('img:first-of-type');
@@ -49,14 +54,18 @@ function setPrev() {
   var activeTxt = $('span.active');
 
   activeImage.removeClass('active');
-  activeTxt.removeClass('active');
+  if(activeTxt.attr('id') !== 'b0') {
+    activeTxt.removeClass('active');
+  }
 
   if (activeImage.prev().length > 0 && currentImage > 1) {
     var prev = activeImage.prev();
     var prevTxt = activeTxt.prev();
     $("#image-container").css({width: prev.width()});
     prev.addClass('active');
-    prevTxt.addClass('active');
+    if(activeTxt.attr('id') !== 'b0') {
+      prevTxt.addClass('active');
+    }
     currentImage--;
   } else {
     var current = $('#image-container').children('img:last-of-type');
@@ -113,7 +122,9 @@ var imgPreview = {
       var activeImage = $('#image-container').children('img.active');
       var activeTxt = $('#description').children('span.active');
       activeImage.removeClass('active');
-      activeTxt.removeClass('active');
+      if(activeTxt.attr('id') !== 'b0') {
+        activeTxt.removeClass('active');
+      }
 
       $('#image-container').removeClass("display_none");
       $('#gal_nav').removeClass("display_none");
@@ -134,6 +145,11 @@ var imgPreview = {
 
       if(description !== null) {
         description.className = "active";
+      } else {
+        var description_alt = document.getElementById("b0");
+        if(description_alt !== null) {
+          description_alt.className = "active";
+        }
       }
 
       count.innerHTML = Number(this.id);

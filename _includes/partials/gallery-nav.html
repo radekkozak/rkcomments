@@ -22,17 +22,18 @@
     {% endif %}
   </div>
 
-  <div id='description' class="invisible">
+  {% assign descriptions = include.descriptions %}
+  {% assign size = descriptions.size | minus:1 %}
 
-    {% assign descriptions = include.descriptions %}
-
-
-    {% assign size = descriptions.size | minus:1 %}
-
-    {% for i in (0..size) %}
-    <span id="b{{ forloop.index }}">{{ descriptions[i] }}</span>
-    {% endfor %}
-
-  </div>
-
+  {% if include.description_full == true %}
+    <div id='description' class="invisible" style="width:100% !important;margin-top: -1rem">
+      <span id="b0">{{ descriptions[0] }}</span>
+    </div>
+  {% else %}
+    <div id='description' class="invisible">
+      {% for i in (0..size) %}
+      <span id="b{{ forloop.index }}">{{ descriptions[i] }}</span>
+      {% endfor %}
+    </div>
+  {% endif %}
 </div>

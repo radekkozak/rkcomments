@@ -750,11 +750,11 @@ a.footnote:hover, a.reversefootnote:hover {
   color: #8c8c8c;
 }
 
-#book-description p#book-info {
+#book-description p.margined-info {
   margin-top: 2rem;
 }
 
-span.italic {
+span.italic, p.italic {
   font-style: italic;
 }
 

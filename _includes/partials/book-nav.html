@@ -22,11 +22,15 @@
     {% assign book = include.book_info %}
     <p>
       <strong>{{ book.name }}</strong>
-      {% if book.instock == false %}<span>[ out of print ]</span>{% endif %}
+      {% if book.instock == false %}<span style="color:#c22d2d">[ sold out ]</span>{% endif %}
     </p>
     <p>{{ book.description }}</p>
-    <p id="book-info"><strong>book info</strong></p>
+    <p class="margined-info">
+      <strong>35 EUR / 125 PLN</strong>
+    </p>
+    <p class="margined-info"><strong>book info</strong></p>
     <p>{{ book.edition }}</p>
+    <p>print run: {{ book.print_run }}</p>
     <p>pages: {{ book.pages }}</p>
     <p>photos: {{ book.photos }}</p>
     <p>cover: {{ book.cover }}</p>

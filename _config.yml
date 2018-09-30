@@ -1,13 +1,15 @@
-title: "⁘ Radek Kozak ⁘"
-email: hello@radekkozak.com
+title: "Radek Kozak"
+email: info@radekkozak.com
 description: > # this means to ignore newlines until "baseurl:"
   Write an awesome description for your new site here. You can edit this
   line in _config.yml. It will appear in your document head meta (for
   Google search results) and in your feed.xml site description.
-baseurl: "/test" # the subpath of your site, e.g. /blog
-#url: "https://radekkozak.github.io"
+keywords: photography,literature,travel,fotografia,literatura,podróże,Radek Kozak
+#baseurl: # the subpath of website, e.g. /blog
+#url: "http://0.0.0.0:4000/test"
 twitter_username: radekkozak
 github_username:  radekkozak
+author: Radek Kozak
 
 timezone: Europe/Warsaw
 
@@ -29,6 +31,12 @@ sass:
 plugins:
 - jekyll-feed
 - jekyll-paginate
+- jekyll-tidy
+
+jekyll_tidy:
+  compress_html: true
+  #exclude: ["_posts/*.md"]
+  #ignore_env: development
 
 defaults:
 - scope:
@@ -37,48 +45,39 @@ defaults:
   values:
     layout: "post"
 
-# Exclude from processing.
-# The following items will not be processed, by default. Create a custom list
-# to override the default setting.
-# exclude:
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
-
 # Pagination
 paginate: 5
 paginate_path: "/notepad/page:num/"
-permalink: notepad/:year/:month/:day/:title.html
+permalink: notepad/:year/:month/:day/:title/
 
 excerpt_separator: "<!--more-->"
 
 collections:
   poems:
     output: true
-    permalink: poetry/original/:title.html
+    permalink: poetry/original/:title/
   translated_authors:
     output: false
   emily-dickinson:
     output: true
-    permalink: poetry/translations/:collection/:title.html
+    permalink: poetry/translations/:collection/:title/
   john-keats:
     output: true
-    permalink: poetry/translations/:collection/:title.html
+    permalink: poetry/translations/:collection/:title/
   miroslav-holub:
     output: true
-    permalink: poetry/translations/:collection/:title.html
-  yehuda-amichai:
-    output: true
-    permalink: poetry/translations/:collection/:title.html
+    permalink: poetry/translations/:collection/:title/
   charles-simic:
       output: true
-      permalink: poetry/translations/:collection/:title.html
+      permalink: poetry/translations/:collection/:title/
+  charles-wright:
+    output: true
+    permalink: poetry/translations/:collection/:title/
+  yehuda-amichai:
+    output: true
+    permalink: poetry/translations/:collection/:title/
 
-#repository: "radekkozak/radekkozak.com"
+repository: "radekkozak/radekkozak.com"
 
 # Staticman comments (full configuration in staticman.yml)
 staticman:

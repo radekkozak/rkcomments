@@ -1,0 +1,25 @@
+---
+layout: default
+contentclass: gallery
+---
+
+{% assign items = page.items %}
+{% assign name = page.gallery %}
+{% assign descriptions = page.descriptions %}
+{% assign book_info = page.book_info %}
+
+<div id="image-container">
+
+  {% include partials/loading-spinner.html %}
+
+  {% for i in (1..items) %}
+  <img style="opacity:0.9;" src="img/Radek-Kozak-{{ name }}-{{ i }}.jpg" id=a{{ i }}>
+  {% endfor %}
+
+  {% include partials/book-nav-coming-soon.html descriptions=descriptions items=items book_info=book_info %}
+
+</div>
+
+{% include partials/gallery-thumbs.html items=items %}
+
+<script src="{{ site.baseurl }}/assets/js/gallery.min.js"></script>
