@@ -7,7 +7,8 @@ contentclass: journal
   {% assign date_format = "%b %-d, %Y" %}
   <span>{{ page.date | date: date_format  }}</span>
 </h1>
-{{ page.content }}
+{{ page.content | extlinks }}
+{% include share-buttons.html %}
 <div class="pager">
   {% if page.categories %}
   <h5>in:
@@ -44,3 +45,5 @@ contentclass: journal
 {% if page.comments == true %}
 {% include comments.html %}
 {% endif %}
+
+{% include footer.html %}

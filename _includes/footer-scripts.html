@@ -1,0 +1,38 @@
+<script>
+  // highlights current menu item
+  $(document).ready(function () {
+    var str = location.href.toLowerCase();
+
+    if (str.indexOf('journal') > -1) {
+      $(".varia .menu-item:first-child").addClass("highlight");
+    } else {
+      $(".menu-item a").each(function () {
+        if (str.indexOf(this.href.toLowerCase()) > -1) {
+          $(this).parent().addClass("highlight");
+        }
+      });
+    }
+  });
+
+  (function () {
+    try{
+      var links = document.querySelectorAll('a.external');
+      for (var i = 0; i < links.length; ++i) {
+        links[i].onclick = function() {
+          ga('send', 'event', 'outbound', 'click', this.href);
+        };
+      }
+      window.addEventListener('error', function(e) {
+        ga('send', 'exception', {
+          'exDescription': e.message,
+          'exFatal': false
+        });
+      });
+    }catch(e){
+      ga('send', 'exception', {
+        'exDescription': err.message,
+        'exFatal': false
+      });
+    }
+  })();
+</script>

@@ -1,0 +1,23 @@
+<div class="sharing-bar">
+  <!--<span>share:</span>-->
+  <ul>
+    <li>
+      <a class="external twitter" target="_blank"
+         href="https://twitter.com/intent/tweet?url={{ page.url | prepend: site.baseurl | prepend: site.url | cgi_escape }}&text={{ page.title }}">
+        {% include twitter-icon.html %}
+      </a>
+    </li>
+    <li>
+      <a class="external facebook" target="_blank"
+         href="https://www.facebook.com/sharer/sharer.php?u={{ page.url | prepend: site.baseurl | prepend: site.url | cgi_escape }}">
+        {% include facebook-icon.html %}
+      </a>
+    </li>
+    <li>
+      <a class="external email" target="_blank"
+         href="mailto:?subject={{ page.title }}&body={{ page.url | prepend: site.baseurl | prepend: site.url | cgi_escape }}">
+        {% include email-icon.html %}
+      </a>
+    </li>
+  </ul>
+</div>

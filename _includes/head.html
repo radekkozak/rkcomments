@@ -6,84 +6,143 @@
   <meta name="robots" content="index, follow">
 
   <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  {% if page.title %}
   <meta name="apple-mobile-web-app-title"
-        content="{{ page.title | escape }} - {{ site.title | escape }}">
+        content="{{ page.title | escape }} &#8280; {{ site.title }}">
+  {% else %}
+  <meta name="apple-mobile-web-app-title"
+        content="{{ site.title }} &#8280; {{ site.description | escape }}">
+  {% endif %}
 
-  <meta name="keywords"
-        content="{% if page.keywords %}{{ page.keywords | join: ',' }},{% endif%}{{ site.keywords }}">
+  {% assign keys = site.keywords | split: ',' %}
+  {% assign tags_keys = page.tags | concat: keys | uniq %}
+  {% assign keywords = tags_keys | join: ',' %}
+  <meta name="keywords" content="{{ keywords }}">
   <meta name="author" content="{{ page.author | default: site.author }}"/>
   <meta name="copyright"
-        content="Copyright © 2012-2018 by {{ page.author | default: site.author }}. All Rights Reserved"/>
+        content="Copyright © 2018 by {{ page.author | default: site.author }}. All Rights Reserved"/>
 
-  <title>{% if page.title %}{{ page.title | escape }} - {% endif%}{{ site.title | escape }}</title>
+  {% if page.title %}
+  <title>{% if page.title %}{{ page.title | escape }} &#8280; {% endif%}{{ site.title }}</title>
+  {% else %}
+  <title>{{ site.title }} &#8280; {{ site.description }}</title>
+  {% endif %}
+
   {% if page.description %}
   <meta name="description" content="{{ page.description }}">
   {% else %}
   <meta name="description"
-        content="{{ page.content | default:site.description | split:site.excerpt_separator | first | strip_html | normalize_whitespace | truncate: 300 | escape }}">
+        content="{{ page.content | default:site.long_description | split:site.excerpt_separator | first | strip_html | normalize_whitespace | truncate: 300 | escape }}">
   {% endif %}
 
   <!-- Facebook -->
   <meta property="og:url"
         content="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
-  <meta property="og:title" content="{{ page.title | escape }} - {{ site.title | escape }}">
+
+  {% if page.title %}
+  <meta property="og:title" content="{{ page.title | escape }} &#8280; {{ site.title }}">
+  {% else %}
+  <meta property="og:title" content="{{ site.title }} &#8280; {{ site.description | escape }}">
+  {% endif %}
+
   {% if page.image %}
   <meta property="og:image" content="{{ page.image | prepend: site.baseurl | prepend: site.url }}">
+  {% else %}
+  <meta property="og:image"
+        content="{{ '/assets/favicons/logo-512x512.png' | prepend: site.baseurl | prepend: site.url }}">
   {% endif %}
+
   {% if page.description %}
-  <meta property="og:description" content="{{ page.description | truncate: 160 | escape }}">
+  <meta property="og:description" content="{{ page.description | truncate: 300 | escape }}">
   {% else %}
   <meta property="og:description"
-        content="{{ page.content | default:site.description | split:site.excerpt_separator | first | strip_html | normalize_whitespace | truncate: 160 | escape }}">
+        content="{{ page.content | default:site.long_description | split:site.excerpt_separator | first | strip_html | normalize_whitespace | truncate: 200 | escape }}">
   {% endif %}
+
+  {% if page.layout == 'post' %}
+  <meta property="og:type" content="article">
+  {% else %}
+  <meta property="og:type" content="website">
+  {% endif %}
+
   <meta property="og:site_name" content="{{ site.title }}">
 
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:site" content="@{{ meta.twitter_username }}">
-  <meta name="twitter:title" content="{{ page.title | escape }} - {{ site.title | escape }}">
+  <meta name="twitter:site"
+        content="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+
+  {% if page.title %}
+  <meta name="twitter:title" content="{{ page.title | escape }} &#8280; {{ site.title }}">
+  {% else %}
+  <meta name="twitter:title" content="{{ site.title }} &#8280; {{ site.description | escape }}">
+  {% endif %}
+
   {% if page.description %}
-  <meta name="twitter:description" content="{{ page.description | truncate: 160 | escape }}">
+  <meta name="twitter:description" content="{{ page.description | truncate: 200 | escape }}">
   {% else %}
   <meta name="twitter:description"
-        content="{{ page.content | default:site.description | split:site.excerpt_separator | first | strip_html | normalize_whitespace | truncate: 160 | escape }}">
+        content="{{ page.content | default:site.long_description | split:site.excerpt_separator | first | strip_html | normalize_whitespace | truncate: 200 | escape }}">
   {% endif %}
+
   {% if page.image %}
   <meta property="twitter:image:src"
         content="{{ page.image | prepend: site.baseurl | prepend: site.url }}">
+  {% else %}
+  <meta property="twitter:image:src"
+        content="{{ '/assets/favicons/logo-512x512.png' | prepend: site.baseurl | prepend: site.url }}">
   {% endif %}
 
   <!-- G+ -->
-  <meta itemprop="name" content="{{ page.title | escape }} - {{ site.title | escape }}"/>
+  {% if page.title %}
+  <meta itemprop="name" content="{{ page.title | escape }} &#8280; {{ site.title }}"/>
+  {% else %}
+  <meta itemprop="name" content="{{ site.title }} &#8280; {{ site.description | escape }}"/>
+  {% endif %}
+
   {% if page.description %}
-  <meta itemprop="description" content="{{ page.description | truncate: 160 | escape }}">
+  <meta itemprop="description" content="{{ page.description | truncate: 200 | escape }}">
   {% else %}
   <meta itemprop="description"
-        content="{{ page.content | default:site.description | split:site.excerpt_separator | first | strip_html | normalize_whitespace | truncate: 160 | escape }}">
+        content="{{ page.content | default:site.long_description | split:site.excerpt_separator | first | strip_html | normalize_whitespace | truncate: 200 | escape }}">
   {% endif %}
+
   {% if page.image %}
   <meta itemprop="image" content="{{ page.image | prepend: site.baseurl | prepend: site.url }}"/>
+  {% else %}
+  <meta itemprop="image"
+        content="{{ '/assets/favicons/logo-512x512.png' | prepend: site.baseurl | prepend: site.url }}"/>
   {% endif %}
 
   <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:300,300i|Roboto:300,300i"
         rel="stylesheet">
-  <link rel="canonical"
-        href="{{ page.url | prepend: site.github.url | replace:'index.html','' | absolute_url }}">
-  <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}"/>
+  <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
+  <link rel="stylesheet"
+        href="{{ '/assets/css/main.css' | prepend: site.baseurl | prepend: site.url }}?{{site.time | date: '%s%N'}}"/>
 
-  <link rel="apple-touch-icon" sizes="180x180" href="{{ site.baseurl }}/assets/favicons/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="{{ site.baseurl }}/assets/favicons/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="{{ site.baseurl }}/assets/favicons/favicon-16x16.png">
-  <link rel="manifest" href="{{ site.baseurl }}/manifest.json">
-  <link rel="shortcut icon" href="{{ site.baseurl }}/assets/favicons/favicon.ico">
+  <link rel="apple-touch-icon" sizes="180x180"
+        href="{{ '/assets/favicons/apple-touch-icon.png' | prepend: site.baseurl | prepend: site.url }}">
+  <link rel="icon" type="image/png" sizes="32x32"
+        href="{{ '/assets/favicons/favicon-32x32.png' | prepend: site.baseurl | prepend: site.url }}">
+  <link rel="icon" type="image/png" sizes="16x16"
+        href="{{ '/assets/favicons/favicon-16x16.png' | prepend: site.baseurl | prepend: site.url }}">
+  <link rel="manifest" href="{{ '/manifest.json' | prepend: site.baseurl | prepend: site.url }}">
+  <link rel="shortcut icon"
+        href="{{ '/assets/favicons/favicon.ico' | prepend: site.baseurl | prepend: site.url }}">
+  <link rel="icon" type="image/x-icon"
+        href="{{ '/assets/favicons/favicon.ico' | prepend: site.baseurl | prepend: site.url }}">
   <meta name="msapplication-TileColor" content="#ffffff">
-  <meta name="msapplication-TileImage" content="{{ site.baseurl }}/assets/favicons/mstile-144x144.png">
-  <meta name="msapplication-config" content="{{ site.baseurl }}/browserconfig.xml">
+  <meta name="msapplication-TileImage"
+        content="{{ '/assets/favicons/mstile-144x144.png' | prepend: site.baseurl | prepend: site.url }}">
+  <meta name="msapplication-config"
+        content="{{ '/browserconfig.xml' | prepend: site.baseurl | prepend: site.url }}">
   <meta name="theme-color" content="#ffffff">
 
   {% feed_meta %}
 
-  <script src="{{ site.baseurl }}/assets/js/libs/modernizr.min.js"></script>
-  <script src="{{ site.baseurl }}/assets/js/libs/jquery.min.js"></script>
+  <script
+      src="{{ '/assets/js/libs/modernizr.min.js' | prepend: site.baseurl | prepend: site.url }}"></script>
+  <script
+      src="{{ '/assets/js/libs/jquery.min.js' | prepend: site.baseurl | prepend: site.url }}"></script>
 </head>

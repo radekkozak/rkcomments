@@ -1,6 +1,5 @@
 .journal {
-  margin: 0 0 2em 0;
-  top: -4.25rem;
+  margin: -4.25rem 0 2rem 0;
   font-family: "Roboto";
   font-weight: 300;
   font-size: 1rem;
@@ -22,8 +21,8 @@
 
 .journal em {
   font-style: italic;
-  margin: 0 0.2em;
-  /*letter-spacing: 0.2em;*/
+  /*margin: 0 0.2em;
+  letter-spacing: 0.2em;*/
   word-spacing: 0;
 }
 
@@ -260,8 +259,6 @@
   border-left: 1px solid #c22d2d;
   font-style: italic;
   color: #444; /*#8c8c8c;*/
-  /*text-align: justify;*/
-  /*text-align: left;*/
 
   /*width: 70%;*/
   float: right;
@@ -269,7 +266,8 @@
   clear: both;
   margin: 1rem 2rem 3rem 16rem;
   font-family: BoxedLight;
-  /*font-size: 0.9375rem;*/
+  font-size: 0.9375rem;
+  line-height: 1.35rem;
 }
 
 blockquote + blockquote {
@@ -342,8 +340,9 @@ blockquote + blockquote {
 }
 
 .journal a:hover {
-  border-bottom: 1px dotted #c22d2d;
-  padding: 0 0 2px;
+  /*border-bottom: 1px dotted #c22d2d;
+  padding: 0 0 2px;*/
+  color: #f03838;
 }
 
 .journal a.footnote-backref {
@@ -534,12 +533,90 @@ blockquote + blockquote {
   background: transparent;
   color: #999 !important;
   width: 10em;
-  margin-top: 2rem;
+  /*margin-top: 1rem;*/
 }
 
 .comment-section input[type=submit]:focus {
   border: 1px dashed #333333 !important;
   color: #333333 !important;
+}
+
+/* CUSTOM CHECKBOX */
+// hide the checkbox
+.hidden-box {
+  position: absolute;
+  top: -9999px;
+  left: -9999px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  opacity: 0;
+}
+.check--label {
+  /*font-size: 20px;*/
+  margin: 0;
+  display: flex !important;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  /*justify-content: flex-start;*/
+  justify-content: flex-end;
+  align-items: center;
+}
+.check--label-box {
+  display: flex;
+  align-self: center;
+  position: relative;
+  height: 20px;
+  width: 20px;
+  margin: 0;
+  /*border: 2px solid #3498db;
+  border-radius: 2px;*/
+  border: 1px dashed #c9c9c9 !important;
+  cursor: pointer;
+}
+.check--label-text {
+  display: flex;
+  align-self: center;
+  position: relative;
+  cursor: pointer;
+  padding: 0 1rem;
+  color: #999 !important;
+  /*border-left: 1px solid #ecf0f1;*/
+}
+/*.check--label-text:after {
+  content: '';
+  display: block;
+  width: 0%;
+  height: 2px;
+  background-color: #000;
+  position: absolute;
+  top: 50%;
+  left: 7.5%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  transition: width 100ms ease-in-out;
+}*/
+.hidden-box:checked + .check--label {
+  /*background-color: #F9F9F9;*/
+}
+.hidden-box:checked + .check--label .check--label-box {
+  background-color: #DFF0D8;
+}
+.hidden-box:checked + .check--label .check--label-box:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0px;
+  left: 6px;
+  width: 6px;
+  height: 12px;
+  border: solid #333333;
+  border-width: 0 1px 1px 0;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.hidden-box:checked + .check--label .check--label-text:after {
+  width: 85%;
 }
 
 .comment-section label {
@@ -608,4 +685,43 @@ textarea.parsley-error {
 
 .parsley-errors-list {
   display: none;
+}
+
+/* SHARING BAR */
+.sharing-bar {
+  display: flex;
+  align-items: center;
+  margin: 2rem 0 0 0;
+  float: right;
+  padding-right: 2rem;
+}
+
+.sharing-bar ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0
+}
+
+.sharing-bar li {
+  margin: 0 0 0 15px !important;
+}
+
+.sharing-bar li a {
+  display: flex;
+  transition: .15s transform ease
+}
+
+.sharing-bar li a.facebook svg, .sharing-bar li a.twitter svg,
+.sharing-bar li a.email svg {
+  fill: #333;
+}
+
+.sharing-bar li a:hover {
+  transform: scale(1.1)
+}
+
+.sharing-bar li svg {
+  width: 25px;
+  height: 25px
 }

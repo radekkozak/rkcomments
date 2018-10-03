@@ -101,8 +101,9 @@ header > h3 a {
 }
 
 header > h3 a:hover {
-  border-bottom: 1px dotted #c22d2d;
-  padding: 0 0 2px;
+  color: #f03838;
+  /*border-bottom: 1px dotted #c22d2d;
+  padding: 0 0 2px;*/
 }
 
 h1 {
@@ -240,6 +241,10 @@ img.desaturate {
 
 .menu li.highlight > a#notepad {
   margin-left: -6px;
+}
+
+.menu li.highlight > a#notepad:hover {
+  color: #f03838 !important;
 }
 
 #notepad + a {
@@ -552,7 +557,7 @@ img.desaturate {
 }
 
 .journal .pager ul li a {
-  color: #6b6b6b; /*#aaa;*/
+  color: #333; /*#aaa;#6b6b6b*/
   padding: 7px 10px 5px 10px;
   text-transform: uppercase;
   letter-spacing: 0.25em;
@@ -573,10 +578,20 @@ img.desaturate {
   color: #c22d2d;
 }
 
+.journal .pager ul li.prev a p:last-of-type, .journal .pager ul li.next a p:last-of-type {
+  opacity: 0.6;
+}
+
 .journal .pager li.prev a p:last-child, .journal .pager li.next a p:last-child {
   font-size: 0.6875rem;
   letter-spacing: 0.1em;
+  /*color: #6b6b6b;*/
+  text-transform: capitalize;
 }
+
+/*.journal .pager li.prev a:hover, .journal .pager li.next a:hover {
+  color: #c22d2d !important;
+}*/
 
 .journal .pager li.next a p:last-child {
   margin-left: 0.15rem;
@@ -697,6 +712,7 @@ a.footnote:hover, a.reversefootnote:hover {
   float: left;
   margin-right: 4em;
   flex-grow: 3;
+  margin-top: 0.5rem;
 }
 
 .notice-success, .notice-error {
@@ -758,53 +774,18 @@ span.italic, p.italic {
   font-style: italic;
 }
 
-/*.carousel-control {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  width: 15%;
-  font-size: 20px;
-  color: #fff;
+footer {
+  margin: 4rem 0 0 0;
+}
+
+footer p {
   text-align: center;
-  text-shadow: 0 1px 2px rgba(0,0,0,.6);
-  background-color: rgba(0,0,0,0);
-  filter: alpha(opacity=50);
-  opacity: .5;
+  font-size: 0.8125rem;
+  line-height: 1rem;
+  margin: 0.5rem 0 !important;
 }
 
-.carousel-control:focus, .carousel-control:hover {
-  color: #fff;
-  text-decoration: none;
-  filter: alpha(opacity=80);
-  outline: 0;
-  opacity: .8;
+footer p, footer a {
+  color: #aaa;
 }
 
-.carousel-control.right {
-  right: 0;
-  left: auto;
-}
-
-.carousel-control .glyphicon-chevron-left, .carousel-control .glyphicon-chevron-right,
-.carousel-control .icon-next, .carousel-control .icon-prev {
-  position: absolute;
-  top: 50%;
-  z-index: 5;
-  display: inline-block;
-}
-
-.carousel-control .glyphicon-chevron-left, .carousel-control .icon-prev {
-  left: 50%;
-}
-
-.glyphicon-chevron-left:before, .glyphicon-chevron-right:before {
-  display: inline-block;
-  font-size: 2rem;
-  content: "\027A4"; !* \e079*!
-}
-.glyphicon-chevron-left:before {
-  -webkit-transform: rotate(180deg);
-  -ms-transform: rotate(180deg);
-  transform: rotate(180deg);
-}*/

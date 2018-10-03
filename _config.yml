@@ -1,22 +1,28 @@
 title: "Radek Kozak"
+description: "photographer / wanderer"
 email: info@radekkozak.com
-description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
-keywords: photography,literature,travel,fotografia,literatura,podróże,Radek Kozak
+long_description: > # this means to ignore newlines until "baseurl:"
+  Radek Kozak is a polish photographer whose work borders on the classic documentary,
+  street photography and fine art. His main area of focus revolves mostly around long-term projects
+  and small narratives. In his work Radek is interested in various topics among which are
+  intersections of photography, language and memory, as well as the notions of identity and
+  belonging, especially in regard to relations between people and places. Recently he's been also
+  exploring social and political issues in his home country by concentrating on more close-by and
+  intimate stories. In 2015 he published his first book Cuore — a photographic essay on Sicilian
+  Easter rites that has spanned his five years of travel and documentary work on the island.
+keywords: Radek Kozak,photography,literature,travel,poetry,Hüzün,Cuore,Eclogues,Distant Family,Darkness Visible,essays,fotografia,literatura,podróże,poezja,eseje
 #baseurl: # the subpath of website, e.g. /blog
-#url: "http://0.0.0.0:4000/test"
-twitter_username: radekkozak
+url: "https://radekkozak.com"
+instagram_username: _radekkozak_
 github_username:  radekkozak
-author: Radek Kozak
-
+author: radek
 timezone: Europe/Warsaw
+safe: false
+google_analytics: UA-126885126-1
 
 keep_files: ["photography", "books"]
 include: [.htaccess]
-
-# repository: localhost:4000
+exclude: ['README.md', 'tmp/', 'Gemfile', 'Gemfile.lock']
 
 # Build settings
 markdown: kramdown
@@ -32,6 +38,8 @@ plugins:
 - jekyll-feed
 - jekyll-paginate
 - jekyll-tidy
+- jekyll-sitemap
+- jekyll-postfiles
 
 jekyll_tidy:
   compress_html: true
@@ -51,6 +59,10 @@ paginate_path: "/notepad/page:num/"
 permalink: notepad/:year/:month/:day/:title/
 
 excerpt_separator: "<!--more-->"
+
+extlinks:
+  attributes: {target: _blank, rel: nofollow, class: 'external'}
+  rel_exclude: ['radekkozak.com']
 
 collections:
   poems:

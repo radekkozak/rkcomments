@@ -1,16 +1,6 @@
-<script>
-  // highlights current menu item
-  $(document).ready(function () {
-    var str = location.href.toLowerCase();
-
-    if (str.indexOf('journal') > -1) {
-      $(".varia .menu-item:first-child").addClass("highlight");
-    } else {
-      $(".menu-item a").each(function () {
-        if (str.indexOf(this.href.toLowerCase()) > -1) {
-          $(this).parent().addClass("highlight");
-        }
-      });
-    }
-  });
-</script>
+<footer>
+  <p>Copyright © 2018 by Radek Kozak. All Rights Reserved</p>
+  <p>
+    <a href="/feed.xml">rss</a> – <a href="https://instagram.com/_radekkozak_/" rel='noopener' target='_blank'>instagram</a>
+  </p>
+</footer>

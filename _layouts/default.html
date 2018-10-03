@@ -25,35 +25,35 @@
       <a class="nav-btn" id="nav-close-btn" href="#"></a>
       <div class="collections">
         <ul class='menu'>
-          <li class='menu-item'><a href='{{ site.baseurl }}/photography/cuore/' title="Photography / Cuore - Monograph of Sicilian Easter rites">Cuore</a></li>
-          <li class='menu-item'><a href='{{ site.baseurl }}/photography/cuore-revisited/' title="Photography / Cuore Revisited - A reprisé of original monograph">Cuore :
+          <li class='menu-item'><a href='{{ site.baseurl }}/photography/cuore/' title="Cuore - Monograph of Sicilian Easter rites">Cuore</a></li>
+          <li class='menu-item'><a href='{{ site.baseurl }}/photography/cuore-revisited/' title="Cuore Revisited - A reprisé of original monograph">Cuore :
             Revisited</a></li>
-          <li class='menu-item'><a href='{{ site.baseurl }}/photography/darkness-visible/' title="Photography / Darkness Visible">Darkness Visible</a></li>
-          <li class='menu-item'><a href='{{ site.baseurl }}/photography/distant-family/' title="Photography / Distant Family">Distant Family</a></li>
-          <li class='menu-item'><a href='{{ site.baseurl }}/photography/huzun/' title="Photography / Hüzün - Images of Melancholy">Hüzün</a></li>
+          <li class='menu-item'><a href='{{ site.baseurl }}/photography/darkness-visible/' title="Darkness Visible">Darkness Visible</a></li>
+          <li class='menu-item'><a href='{{ site.baseurl }}/photography/distant-family/' title="Distant Family">Distant Family</a></li>
+          <li class='menu-item'><a href='{{ site.baseurl }}/photography/huzun/' title="Hüzün - Images of Melancholy">Hüzün</a></li>
         </ul>
       </div>
 
       <div class="personal-projects">
         <ul class='menu'>
           <li class="menu-title">PERSONAL</li>
-          <li class='menu-item'><a href='{{ site.baseurl }}/photography/eclogues/' title="Photography / Eclogues">Eclogues</a></li>
-          <li class='menu-item'><a href='{{ site.baseurl }}/photography/sketchbook/' title="Photography / Sketchbook">Sketchbook</a></li>
+          <li class='menu-item'><a href='{{ site.baseurl }}/photography/eclogues/' title="Eclogues">Eclogues</a></li>
+          <li class='menu-item'><a href='{{ site.baseurl }}/photography/sketchbook/' title="Sketchbook">Sketchbook</a></li>
         </ul>
       </div>
 
       <div class="nav-books">
         <ul class='menu'>
           <li class="menu-title">BOOKS</li>
-          <li class='menu-item'><a href='{{ site.baseurl }}/books/cuore/' title="Books / Cuore - Monograph of Sicilian Easter rites">CUORE</a></li>
+          <li class='menu-item'><a href='{{ site.baseurl }}/books/cuore/' title="Cuore - Monograph of Sicilian Easter rites">CUORE</a></li>
         </ul>
       </div>
 
       <div class="nav-poetry">
         <ul class='menu'>
           <li class="menu-title">POETRY</li>
-          <li class='menu-item'><a href='{{ site.baseurl }}/poetry/original/' title="Poetry / Selected Poems by Radek Kozak">ORIGINAL</a></li>
-          <li class='menu-item'><a href='{{ site.baseurl }}/poetry/translations/' title="Poetry / In Translation - Selected Poems translated by Radek Kozak">IN
+          <li class='menu-item'><a href='{{ site.baseurl }}/poetry/original/' title="Selected Poems by Radek Kozak">ORIGINAL</a></li>
+          <li class='menu-item'><a href='{{ site.baseurl }}/poetry/translations/' title="Poetry In Translation - Selected Poems translated by Radek Kozak">IN
             TRANSLATION</a></li>
         </ul>
       </div>
@@ -64,7 +64,7 @@
           <li class='menu-item'>
             <a id="notepad" href='{{ site.baseurl }}/notepad/' title="Jottings of photography, literature, travel and life">NOTEPAD</a>
             <a href="{{ site.baseurl | prepend: site.url }}/feed.xml"
-               title="{{ site.author }} - Never miss my note">+ feed</a>
+               title="{{ site.author }} - Never miss my note">+ rss</a>
           </li>
 
           <li class='menu-item'><a href='{{ site.baseurl }}/contact/' title="{{ site.author }} - Contact page">CONTACT</a></li>
@@ -76,7 +76,9 @@
     </aside>
 
     <section class="content">
-      <div class="{{ page.contentclass | default: layout.contentclass }}">{{ content }}</div>
+      <div class="{{ page.contentclass | default: layout.contentclass }}">
+        {{ content }}
+      </div>
     </section>
 
     <div class="mask">
@@ -86,8 +88,10 @@
   </div>
 </div>
 
-{% include footer.html %}
+{% if jekyll.environment == 'production' %}
+{% include google-analytics.html %}
+{% endif %}
 
+{% include footer-scripts.html %}
 </body>
-
 </html>
