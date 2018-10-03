@@ -2,8 +2,8 @@
 layout: default
 contentclass: journal
 title: Notepad
-description: My notepad. Feel free to rummage through.
-keywords: [blog, notepad, notatnik, notes, essays, sketches, notki, eseje, szkice]
+description: Radek Kozak is a polish photographer whose work borders on the classic documentary, street photography and fine art. His main area of focus revolves mostly around long-term projects and small narratives. In his work Radek is interested in various topics among which are intersections of photography, language and memory, as well as the notions of identity and belonging, especially in regard to relations between people and places. Recently he's been also exploring social and political issues in his home country by concentrating on more close-by and intimate stories. In 2015 he published his first book Cuore — a photographic essay on Sicilian Easter rites that has spanned his five years of travel and documentary work on the island.
+keywords: [blog,notepad,journal,notes,essays,notatnik,sketches,jottings,notki,eseje,szkice]
 ---
 
 <h1 style="display: none">notepad</h1>
@@ -15,8 +15,8 @@ keywords: [blog, notepad, notatnik, notes, essays, sketches, notki, eseje, szkic
       <span>{{ post.date | date: date_format  }}</span>
     </h2>
   </a>
-  {% if post.content contains site.excerpt_separator %}
-  {{ post.content | split:site.excerpt_separator | first }}...
+  {% if post.content contains post.excerpt_separator %}
+  {{ post.content | split:post.excerpt_separator | first }}...
   {% else %}
   {{ post.content | truncatewords: 125 }}
   {% endif %}
@@ -25,6 +25,7 @@ keywords: [blog, notepad, notatnik, notes, essays, sketches, notki, eseje, szkic
 <hr>
 {% endfor %}
 
+{% if paginator.next_page or paginator.previous_page %}
 <div class="pager">
   <ul>
     <li class="prev">
@@ -49,7 +50,9 @@ keywords: [blog, notepad, notatnik, notes, essays, sketches, notki, eseje, szkic
     </li>
   </ul>
 </div>
+{% endif %}
 
 <h3 class="aligncenter margintop0"><a href="{{ site.baseurl }}/notepad/archive/"
                                       title="Rummage through my notepad">archive</a></h3>
 
+{% include footer.html %}
