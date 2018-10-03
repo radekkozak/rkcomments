@@ -13,7 +13,7 @@ tags: [memory, travel, literature, Plato, Dariusz Czaja, Levinas, Goethe, Disrae
 > we are thickened time
 > <span class="quote-author">Marisa Maderi</span>
 
-![Mount Ararat, Turkey](mount-ararat-turkey.jpg "Mount Ararat, Turkey")
+![Mount Ararat, Turkey](/uploads/2018/10/Radek-Kozak-Mount-Ararat-Turkey.jpg "Mount Ararat, Turkey")
 
 ##### I
 

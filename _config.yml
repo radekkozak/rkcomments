@@ -39,7 +39,6 @@ plugins:
 - jekyll-paginate
 - jekyll-tidy
 - jekyll-sitemap
-- jekyll-postfiles
 
 jekyll_tidy:
   compress_html: true
