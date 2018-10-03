@@ -43,7 +43,7 @@ Z paczką Frito Banditos na kolanach.
 Prezydent Bush z ekranu
 Śledzący każdy jej kęs.
 
-Kiepski odbiór, to jedyna 
+Kiepski odbiór, to jedyna
 Zaleta tego miejsca,
 Mówię do kundla
 Sapiącego przyjaźnie w nogach.
@@ -52,10 +52,10 @@ Pod opieką swego ducha wychodzi
 Z przymkniętymi oczami pełnymi łez
 By modlić się o dolary.
 
-"Jeszcze jedno piwo" - powiedziałem do jaśnie pani, 
+"Jeszcze jedno piwo" - powiedziałem do jaśnie pani,
 A gdy nie posłuchała,
 Wyszedłem wygarnąć kameralny koncert
-Słonecznikom rosnącym w ogrodzie.
+Na tle słoneczników w ogrodzie.
 </pre>
 
 <h6 class="poem">translated by: {{ page.translator }}</h6>
