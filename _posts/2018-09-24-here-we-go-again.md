@@ -3,6 +3,7 @@ title: Here we go... again
 date: 2018-09-24 21:20
 comments: false
 lang: en
+permalink: /notepad/the-wanderer/
 categories: [Literature, Travel]
 tags: [literature, travel, Nietzsche, Human All Too Human, Ludzkie Arcyludzkie, The Wanderer, Wędrowiec]
 ---

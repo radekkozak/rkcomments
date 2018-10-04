@@ -55,7 +55,7 @@ defaults:
 # Pagination
 paginate: 5
 paginate_path: "/notepad/page:num/"
-permalink: notepad/:year/:month/:day/:title/
+permalink: notepad/:year/:month/:title/
 
 excerpt_separator: "<!--more-->"
 
