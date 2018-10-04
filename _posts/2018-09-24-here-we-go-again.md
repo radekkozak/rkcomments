@@ -1,7 +1,7 @@
 ---
 title: Here we go... again
 date: 2018-09-24 21:20
-comments: false
+comments: true
 lang: en
 permalink: /notepad/the-wanderer/
 categories: [Literature, Travel]

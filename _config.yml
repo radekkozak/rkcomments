@@ -11,7 +11,7 @@ long_description: > # this means to ignore newlines until "baseurl:"
   intimate stories. In 2015 he published his first book Cuore — a photographic essay on Sicilian
   Easter rites that has spanned his five years of travel and documentary work on the island.
 keywords: Radek Kozak,photography,literature,travel,poetry,Hüzün,Cuore,Eclogues,Distant Family,Darkness Visible,essays,fotografia,literatura,podróże,poezja,eseje
-#baseurl: # the subpath of website, e.g. /blog
+baseurl: "" # the subpath of website, e.g. /blog
 url: "https://radekkozak.com"
 instagram_username: _radekkozak_
 github_username:  radekkozak
@@ -88,8 +88,8 @@ collections:
     output: true
     permalink: poetry/translations/:collection/:title/
 
-repository: "radekkozak/radekkozak.com"
-
 # Staticman comments (full configuration in staticman.yml)
 staticman:
+  api: "https://staticman3.herokuapp.com/v3/entry/github"
+  repo: "radekkozak/website-comments"
   branch: "master"
