@@ -14,7 +14,7 @@ comments:
 
   # When allowedOrigins is defined, only requests sent from one of the domains
   # listed will be accepted.
-  allowedOrigins: ["radekkozak.com"]
+  # allowedOrigins: ["radekkozak.com"]
 
   # (*) REQUIRED
   #
@@ -36,7 +36,7 @@ comments:
 
   # The format of the generated data files. Accepted values are "json", "yaml"
   # or "frontmatter"
-  format: "yml"
+  format: "yaml"
 
   # Whether entries need to be appproved before they are published to the main
   # branch. If set to `true`, a pull request will be created for your approval.

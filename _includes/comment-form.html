@@ -58,7 +58,7 @@
 
 </form>
 
-<script src="{{ '/assets/js/libs/parsley.min.js' | prepend: site.baseurl | prepend: site.url }}"></script>
+<script src="{{ site.baseurl }}/assets/js/libs/parsley.min.js"></script>
 <script>
   function showAlert(message) {
     $('#comment-form .notice').html(message).fadeIn();
@@ -108,5 +108,5 @@
 
 {% else %}
 <p><em>Comments are closed. If you have a question concerning the content of this page, please feel
-  free to <a href="{{ '/contact/' | prepend: site.baseurl | prepend: site.url }}">contact me</a>.</em></p>
+  free to <a href="{{ site.baseurl }}/contact/">contact me</a>.</em></p>
 {% endunless %}
