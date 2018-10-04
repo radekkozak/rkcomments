@@ -19,9 +19,9 @@
   {% assign tags_keys = page.tags | concat: keys | uniq %}
   {% assign keywords = tags_keys | join: ',' %}
   <meta name="keywords" content="{{ keywords }}">
-  <meta name="author" content="{{ page.author | default: site.author }}"/>
+  <meta name="author" content="{{ page.author | default: site.name }}"/>
   <meta name="copyright"
-        content="Copyright © 2018 by {{ page.author | default: site.author }}. All Rights Reserved"/>
+        content="Copyright © 2018 by {{ page.author | default: site.name }}. All Rights Reserved"/>
 
   {% if page.title %}
   <title>{% if page.title %}{{ page.title | escape }} &#8280; {% endif%}{{ site.title }}</title>
